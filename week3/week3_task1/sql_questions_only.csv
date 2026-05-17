@@ -1,0 +1,51 @@
+question
+List all products
+Get all customers
+Show all orders
+List all employees
+Get all offices
+Show all product lines
+List all payments
+Get product names and prices
+Get customer names and cities
+List employee first and last names
+Get all order dates
+Show product vendor list
+Get all product codes
+List all countries from offices
+Show all order statuses
+Get all payment amounts
+List all job titles
+Get customer phone numbers
+Show product MSRP values
+List order numbers
+Get orders with customer names
+Get employees with office city
+Get payments with customer names
+Get order details with product names
+Get products with product line description
+Get customers with sales rep names
+Get orders with customer city
+Get employees and their manager
+Get orderdetails with product vendor
+Get payments with customer country
+Count customers per country
+Total payments per customer
+Number of orders per status
+Products per product line
+Employees per office
+Total stock per product vendor
+Average buy price per product line
+Orders per customer
+Max MSRP per product line
+Min buy price per vendor
+Total number of customers
+Total number of products
+Total revenue from payments
+Average product price
+Max payment amount
+Min payment amount
+Count total orders
+Total quantity in stock
+Average MSRP
+Number of employees
