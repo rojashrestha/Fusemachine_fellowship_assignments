@@ -1,0 +1,51 @@
+question,query
+List all products,SELECT * FROM products;
+Get all customers,SELECT * FROM customers;
+Show all orders,SELECT * FROM orders;
+List all employees,SELECT * FROM employees;
+Get all offices,SELECT * FROM offices;
+Show all product lines,SELECT * FROM productlines;
+List all payments,SELECT * FROM payments;
+Get product names and prices,"SELECT ""productName"", ""buyPrice"" FROM products;"
+Get customer names and cities,"SELECT ""customerName"", ""city"" FROM customers;"
+List employee first and last names,"SELECT ""firstName"", ""lastName"" FROM employees;"
+Get all order dates,"SELECT ""orderDate"" FROM orders;"
+Show product vendor list,"SELECT DISTINCT ""productVendor"" FROM products;"
+Get all product codes,"SELECT ""productCode"" FROM products;"
+List all countries from offices,"SELECT DISTINCT ""country"" FROM offices;"
+Show all order statuses,"SELECT DISTINCT ""status"" FROM orders;"
+Get all payment amounts,"SELECT ""amount"" FROM payments;"
+List all job titles,"SELECT DISTINCT ""jobTitle"" FROM employees;"
+Get customer phone numbers,"SELECT ""customerName"", ""phone"" FROM customers;"
+Show product MSRP values,"SELECT ""productName"", ""MSRP"" FROM products;"
+List order numbers,"SELECT ""orderNumber"" FROM orders;"
+Get orders with customer names,"SELECT o.""orderNumber"", c.""customerName"" FROM orders o JOIN customers c ON o.""customerNumber"" = c.""customerNumber"";"
+Get employees with office city,"SELECT e.""firstName"", e.""lastName"", o.""city"" FROM employees e JOIN offices o ON e.""officeCode"" = o.""officeCode"";"
+Get payments with customer names,"SELECT p.""checkNumber"", p.""amount"", c.""customerName"" FROM payments p JOIN customers c ON p.""customerNumber"" = c.""customerNumber"";"
+Get order details with product names,"SELECT od.""orderNumber"", p.""productName"", od.""quantityOrdered"", od.""priceEach"" FROM orderdetails od JOIN products p ON od.""productCode"" = p.""productCode"";"
+Get products with product line description,"SELECT p.""productName"", pl.""textDescription"" FROM products p JOIN productlines pl ON p.""productLine"" = pl.""productLine"";"
+Get customers with sales rep names,"SELECT c.""customerName"", e.""firstName"" AS repFirstName, e.""lastName"" AS repLastName FROM customers c JOIN employees e ON c.""salesRepEmployeeNumber"" = e.""employeeNumber"";"
+Get orders with customer city,"SELECT o.""orderNumber"", c.""city"" FROM orders o JOIN customers c ON o.""customerNumber"" = c.""customerNumber"";"
+Get employees and their manager,"SELECT e1.""firstName"" AS employeeFirst, e1.""lastName"" AS employeeLast, e2.""firstName"" AS managerFirst, e2.""lastName"" AS managerLast FROM employees e1 LEFT JOIN employees e2 ON e1.""reportsTo"" = e2.""employeeNumber"";"
+Get orderdetails with product vendor,"SELECT od.""orderNumber"", p.""productVendor"" FROM orderdetails od JOIN products p ON od.""productCode"" = p.""productCode"";"
+Get payments with customer country,"SELECT p.""amount"", c.""country"" FROM payments p JOIN customers c ON p.""customerNumber"" = c.""customerNumber"";"
+Count customers per country,"SELECT ""country"", COUNT(*) as customerCount FROM customers GROUP BY ""country"";"
+Total payments per customer,"SELECT ""customerNumber"", SUM(""amount"") as totalPayment FROM payments GROUP BY ""customerNumber"";"
+Number of orders per status,"SELECT ""status"", COUNT(*) as orderCount FROM orders GROUP BY ""status"";"
+Products per product line,"SELECT ""productLine"", COUNT(*) as productCount FROM products GROUP BY ""productLine"";"
+Employees per office,"SELECT ""officeCode"", COUNT(*) as employeeCount FROM employees GROUP BY ""officeCode"";"
+Total stock per product vendor,"SELECT ""productVendor"", SUM(""quantityInStock"") as totalStock FROM products GROUP BY ""productVendor"";"
+Average buy price per product line,"SELECT ""productLine"", AVG(""buyPrice"") as avgBuyPrice FROM products GROUP BY ""productLine"";"
+Orders per customer,"SELECT ""customerNumber"", COUNT(*) as orderCount FROM orders GROUP BY ""customerNumber"";"
+Max MSRP per product line,"SELECT ""productLine"", MAX(""MSRP"") as maxMSRP FROM products GROUP BY ""productLine"";"
+Min buy price per vendor,"SELECT ""productVendor"", MIN(""buyPrice"") as minBuyPrice FROM products GROUP BY ""productVendor"";"
+Total number of customers,SELECT COUNT(*) FROM customers;
+Total number of products,SELECT COUNT(*) FROM products;
+Total revenue from payments,"SELECT SUM(""amount"") FROM payments;"
+Average product price,"SELECT AVG(""buyPrice"") FROM products;"
+Max payment amount,"SELECT MAX(""amount"") FROM payments;"
+Min payment amount,"SELECT MIN(""amount"") FROM payments;"
+Count total orders,SELECT COUNT(*) FROM orders;
+Total quantity in stock,"SELECT SUM(""quantityInStock"") FROM products;"
+Average MSRP,"SELECT AVG(""MSRP"") FROM products;"
+Number of employees,SELECT COUNT(*) FROM employees;
