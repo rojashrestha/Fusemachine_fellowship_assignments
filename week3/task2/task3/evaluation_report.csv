@@ -1,0 +1,141 @@
+Question,Generated SQL,Executed Successfully,Message,Row Count
+List all products,SELECT * FROM products,True,Success,110
+Get all customers,SELECT * FROM customers,True,Success,122
+Show all orders,SELECT * FROM orders,True,Success,326
+List all employees,SELECT * FROM employees,True,Success,23
+Get all offices,SELECT * FROM offices,True,Success,7
+Show all product lines,SELECT * FROM productlines,True,Success,7
+List all payments,SELECT * FROM payments,True,Success,273
+Get product names and prices,"SELECT productName, buyPrice FROM products",False,"Failed after retry: column ""productname"" does not exist
+LINE 1: SELECT productName, buyPrice FROM products
+               ^
+HINT:  Perhaps you meant to reference the column ""products.productName"".
+",0
+Get customer names and cities,"SELECT customerName, city FROM customers",False,"Failed after retry: column ""customername"" does not exist
+LINE 1: SELECT customerName, city FROM customers
+               ^
+HINT:  Perhaps you meant to reference the column ""customers.customerName"".
+",0
+List employee first and last names,"SELECT firstName, lastName FROM employees",False,"Failed after retry: column ""firstname"" does not exist
+LINE 1: SELECT firstName, lastName FROM employees
+               ^
+HINT:  Perhaps you meant to reference the column ""employees.firstName"".
+",0
+Get all order dates,SELECT orderDate FROM orders,False,"Failed after retry: column ""orderdate"" does not exist
+LINE 1: SELECT orderDate FROM orders
+               ^
+HINT:  Perhaps you meant to reference the column ""orders.orderDate"".
+",0
+Show product vendor list,SELECT DISTINCT productVendor FROM products,False,"Failed after retry: column ""productvendor"" does not exist
+LINE 1: SELECT DISTINCT productVendor FROM products
+                        ^
+HINT:  Perhaps you meant to reference the column ""products.productVendor"".
+",0
+Get all product codes,SELECT productCode FROM products,False,"Failed after retry: column ""productcode"" does not exist
+LINE 1: SELECT productCode FROM products
+               ^
+HINT:  Perhaps you meant to reference the column ""products.productCode"".
+",0
+List all countries from offices,SELECT DISTINCT country FROM offices,True,Success,5
+Show all order statuses,SELECT DISTINCT status FROM orders,True,Success,6
+Get all payment amounts,SELECT amount FROM payments,True,Success,273
+List all job titles,SELECT DISTINCT jobTitle FROM employees,False,"Failed after retry: column ""jobtitle"" does not exist
+LINE 1: SELECT DISTINCT jobTitle FROM employees
+                        ^
+HINT:  Perhaps you meant to reference the column ""employees.jobTitle"".
+",0
+Get customer phone numbers,"SELECT customerName, phone FROM customers",False,"Failed after retry: column ""customername"" does not exist
+LINE 1: SELECT customerName, phone FROM customers
+               ^
+HINT:  Perhaps you meant to reference the column ""customers.customerName"".
+",0
+Show product MSRP values,"SELECT productName, MSRP FROM products",False,"Failed after retry: column ""productname"" does not exist
+LINE 1: SELECT productName, MSRP FROM products
+               ^
+HINT:  Perhaps you meant to reference the column ""products.productName"".
+",0
+List order numbers,SELECT orderNumber FROM orders,False,"Failed after retry: column ""ordernumber"" does not exist
+LINE 1: SELECT orderNumber FROM orders
+               ^
+HINT:  Perhaps you meant to reference the column ""orders.orderNumber"".
+",0
+Get orders with customer names,"SELECT orderNumber, customerName FROM orders JOIN orders ON orders.customerNumber = customers.customerNumber",False,"Failed after retry: table name ""orders"" specified more than once
+",0
+Get employees with office city,"SELECT firstName, lastName, city FROM employees JOIN employees ON employees.officeCode = offices.officeCode",False,"Failed after retry: table name ""employees"" specified more than once
+",0
+Get payments with customer names,"SELECT checkNumber, amount, customerName FROM payments JOIN payments ON payments.customerNumber = customers.customerNumber",False,"Failed after retry: table name ""payments"" specified more than once
+",0
+Get order details with product names,"SELECT orderNumber, quantityOrdered, priceEach, productName FROM orderdetails JOIN orderdetails ON orderdetails.productCode = products.productCode",False,"Failed after retry: table name ""orderdetails"" specified more than once
+",0
+Get products with product line description,"SELECT productName, textDescription FROM products JOIN products ON products.productLine = productlines.productLine",False,"Failed after retry: table name ""products"" specified more than once
+",0
+Get customers with sales rep names,"SELECT customerName, firstName, lastName FROM customers JOIN customers ON customers.salesRepEmployeeNumber = employees.employeeNumber",False,"Failed after retry: table name ""customers"" specified more than once
+",0
+Get orders with customer city,"SELECT orderNumber, city FROM orders JOIN orders ON orders.customerNumber = customers.customerNumber",False,"Failed after retry: table name ""orders"" specified more than once
+",0
+Get employees and their manager,"SELECT firstName, lastName, manager_firstName, manager_lastName FROM employees JOIN employees ON employees.reportsTo = employees.employeeNumber",False,"Failed after retry: table name ""employees"" specified more than once
+",0
+Get orderdetails with product vendor,"SELECT orderNumber, productName, productVendor FROM orderdetails JOIN orderdetails ON orderdetails.productCode = products.productCode",False,"Failed after retry: table name ""orderdetails"" specified more than once
+",0
+Get payments with customer country,"SELECT checkNumber, amount, country FROM payments JOIN payments ON payments.customerNumber = customers.customerNumber",False,"Failed after retry: table name ""payments"" specified more than once
+",0
+Count customers per country,"SELECT country, COUNT(*) FROM customers GROUP BY country",True,Success,28
+Total payments per customer,"SELECT customerName, SUM(amount) FROM payments JOIN payments ON payments.customerNumber = customers.customerNumber GROUP BY customerNumber, customerName",False,"Failed after retry: table name ""payments"" specified more than once
+",0
+Number of orders per status,"SELECT status, COUNT(*) FROM orders GROUP BY status",True,Success,6
+Products per product line,"SELECT productLine, COUNT(productCode) FROM productlines JOIN products ON products.productLine = productlines.productLine GROUP BY productLine",False,"Failed after retry: column products.productline does not exist
+LINE 1: ...T(productCode) FROM productlines JOIN products ON products.p...
+                                                             ^
+HINT:  Perhaps you meant to reference the column ""products.productLine"".
+",0
+Employees per office,"SELECT city, COUNT(employeeNumber) FROM offices JOIN employees ON employees.officeCode = offices.officeCode GROUP BY officeCode, city",False,"Failed after retry: column employees.officecode does not exist
+LINE 1: ...NT(employeeNumber) FROM offices JOIN employees ON employees....
+                                                             ^
+HINT:  Perhaps you meant to reference the column ""employees.officeCode"".
+",0
+Total stock per product vendor,"SELECT productVendor, SUM(quantityInStock) FROM products GROUP BY productVendor",False,"Failed after retry: column ""productvendor"" does not exist
+LINE 1: SELECT productVendor, SUM(quantityInStock) FROM products GRO...
+               ^
+HINT:  Perhaps you meant to reference the column ""products.productVendor"".
+",0
+Average buy price per product line,"SELECT productLine, AVG(buyPrice) FROM products GROUP BY productLine",False,"Failed after retry: column ""productline"" does not exist
+LINE 1: SELECT productLine, AVG(buyPrice) FROM products GROUP BY pro...
+               ^
+HINT:  Perhaps you meant to reference the column ""products.productLine"".
+",0
+Orders per customer,"SELECT customerName, COUNT(orderNumber) FROM customers JOIN orders ON orders.customerNumber = customers.customerNumber GROUP BY customerNumber, customerName",False,"Failed after retry: column orders.customernumber does not exist
+LINE 1: ... COUNT(orderNumber) FROM customers JOIN orders ON orders.cus...
+                                                             ^
+HINT:  Perhaps you meant to reference the column ""orders.customerNumber"".
+",0
+Max MSRP per product line,"SELECT productLine, MAX(MSRP) FROM products GROUP BY productLine",False,"Failed after retry: column ""productline"" does not exist
+LINE 1: SELECT productLine, MAX(MSRP) FROM products GROUP BY product...
+               ^
+HINT:  Perhaps you meant to reference the column ""products.productLine"".
+",0
+Min buy price per vendor,"SELECT productVendor, MIN(buyPrice) FROM products GROUP BY productVendor",False,"Failed after retry: column ""productvendor"" does not exist
+LINE 1: SELECT productVendor, MIN(buyPrice) FROM products GROUP BY p...
+               ^
+HINT:  Perhaps you meant to reference the column ""products.productVendor"".
+",0
+Total number of customers,SELECT COUNT(*) FROM customers,True,Success,1
+Total number of products,SELECT COUNT(*) FROM products,True,Success,1
+Total revenue from payments,SELECT SUM(amount) FROM payments,True,Success,1
+Average product price,SELECT AVG(buyPrice) FROM products,False,"Failed after retry: column ""buyprice"" does not exist
+LINE 1: SELECT AVG(buyPrice) FROM products
+                   ^
+HINT:  Perhaps you meant to reference the column ""products.buyPrice"".
+",0
+Max payment amount,SELECT MAX(amount) FROM payments,True,Success,1
+Min payment amount,SELECT MIN(amount) FROM payments,True,Success,1
+Count total orders,SELECT COUNT(*) FROM orders,True,Success,1
+Total quantity in stock,SELECT SUM(quantityInStock) FROM products,False,"Failed after retry: column ""quantityinstock"" does not exist
+LINE 1: SELECT SUM(quantityInStock) FROM products
+                   ^
+HINT:  Perhaps you meant to reference the column ""products.quantityInStock"".
+",0
+Average MSRP,SELECT AVG(MSRP) FROM products,False,"Failed after retry: column ""msrp"" does not exist
+LINE 1: SELECT AVG(MSRP) FROM products
+                   ^
+",0
+Number of employees,SELECT COUNT(*) FROM employees,True,Success,1
