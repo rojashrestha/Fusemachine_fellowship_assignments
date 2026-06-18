@@ -6,7 +6,7 @@ four checkpoints:
 - **Task 1** : PostgreSQL database in Docker, seeded automatically from `seed.sql`.
 - **Task 2** : Customer API with a 4-layer architecture (`app/database.py`, `app/schemas/`, `app/crud/`, `app/routers/`) and centralized logging.
 - **Task 3** : A Factor VIII concurrency dashboard: 8 individual count endpoints plus an aggregated `/overall_counts` that runs them all at once with `asyncio.gather()`.
-- **Part 4** — The same layered pattern extended to every remaining table, with full CRUD, foreign-key validation, and composite-key resources.
+- **Part 4** : The same layered pattern extended to every remaining table, with full CRUD, foreign-key validation, and composite-key resources.
 
 See [`reflection.md`](./reflection.md) for the written reflections requested in Task 1 and Task 2.
 
