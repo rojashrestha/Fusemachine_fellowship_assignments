@@ -1,0 +1,33 @@
+# Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets - never commit the real .env, only .env.template
+.env
+.env.*
+!.env.template
+
+# Logs
+*.log
+app.log
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
