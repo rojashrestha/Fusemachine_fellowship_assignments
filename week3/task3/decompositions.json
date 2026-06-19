@@ -1,352 +1,679 @@
 {
   "List all products": {
-    "intent": "Retrieve all products",
-    "tables": ["products"],
-    "columns": ["*"],
+    "intent": "Retrieve all rows from products",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "*"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "List all products"
   },
   "Get all customers": {
-    "intent": "Retrieve all customers",
-    "tables": ["customers"],
-    "columns": ["*"],
+    "intent": "Retrieve all rows from customers",
+    "tables": [
+      "customers"
+    ],
+    "columns": [
+      "*"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Get all customers"
   },
   "Show all orders": {
-    "intent": "Retrieve all orders",
-    "tables": ["orders"],
-    "columns": ["*"],
+    "intent": "Retrieve all rows from orders",
+    "tables": [
+      "orders"
+    ],
+    "columns": [
+      "*"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Show all orders"
   },
   "List all employees": {
-    "intent": "Retrieve all employees",
-    "tables": ["employees"],
-    "columns": ["*"],
+    "intent": "Retrieve all rows from employees",
+    "tables": [
+      "employees"
+    ],
+    "columns": [
+      "*"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "List all employees"
   },
   "Get all offices": {
-    "intent": "Retrieve all offices",
-    "tables": ["offices"],
-    "columns": ["*"],
+    "intent": "Retrieve all rows from offices",
+    "tables": [
+      "offices"
+    ],
+    "columns": [
+      "*"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Get all offices"
   },
   "Show all product lines": {
-    "intent": "Retrieve all product lines",
-    "tables": ["productlines"],
-    "columns": ["*"],
+    "intent": "Retrieve all rows from productlines",
+    "tables": [
+      "productlines"
+    ],
+    "columns": [
+      "*"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Show all product lines"
   },
   "List all payments": {
-    "intent": "Retrieve all payments",
-    "tables": ["payments"],
-    "columns": ["*"],
+    "intent": "Retrieve all rows from payments",
+    "tables": [
+      "payments"
+    ],
+    "columns": [
+      "*"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "List all payments"
   },
   "Get product names and prices": {
-    "intent": "Retrieve product names and buy prices",
-    "tables": ["products"],
-    "columns": ["productName", "buyPrice"],
+    "intent": "Retrieve specific columns from products",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "\"productName\"",
+      "\"buyPrice\""
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Get product names and prices"
   },
   "Get customer names and cities": {
-    "intent": "Retrieve customer names and cities",
-    "tables": ["customers"],
-    "columns": ["customerName", "city"],
+    "intent": "Retrieve specific columns from customers",
+    "tables": [
+      "customers"
+    ],
+    "columns": [
+      "\"customerName\"",
+      "city"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Get customer names and cities"
   },
   "List employee first and last names": {
-    "intent": "Retrieve employee first and last names",
-    "tables": ["employees"],
-    "columns": ["firstName", "lastName"],
+    "intent": "Retrieve specific columns from employees",
+    "tables": [
+      "employees"
+    ],
+    "columns": [
+      "\"firstName\"",
+      "\"lastName\""
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "List employee first and last names"
   },
   "Get all order dates": {
-    "intent": "Retrieve all order dates",
-    "tables": ["orders"],
-    "columns": ["orderDate"],
+    "intent": "Retrieve a single column from orders",
+    "tables": [
+      "orders"
+    ],
+    "columns": [
+      "\"orderDate\""
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Get all order dates"
   },
   "Show product vendor list": {
-    "intent": "Retrieve unique list of product vendors",
-    "tables": ["products"],
-    "columns": ["productVendor"],
-    "filters": "DISTINCT",
-    "joins": "None"
+    "intent": "Retrieve a single column from products",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "\"productVendor\""
+    ],
+    "filters": "None",
+    "joins": "None",
+    "question": "Show product vendor list"
   },
   "Get all product codes": {
-    "intent": "Retrieve all product codes",
-    "tables": ["products"],
-    "columns": ["productCode"],
+    "intent": "Retrieve a single column from products",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "\"productCode\""
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Get all product codes"
   },
   "List all countries from offices": {
-    "intent": "Retrieve unique office countries",
-    "tables": ["offices"],
-    "columns": ["country"],
-    "filters": "DISTINCT",
-    "joins": "None"
+    "intent": "Retrieve a single column from offices",
+    "tables": [
+      "offices"
+    ],
+    "columns": [
+      "country"
+    ],
+    "filters": "None",
+    "joins": "None",
+    "question": "List all countries from offices"
   },
   "Show all order statuses": {
-    "intent": "Retrieve unique order statuses",
-    "tables": ["orders"],
-    "columns": ["status"],
-    "filters": "DISTINCT",
-    "joins": "None"
+    "intent": "Retrieve a single column from orders",
+    "tables": [
+      "orders"
+    ],
+    "columns": [
+      "status"
+    ],
+    "filters": "None",
+    "joins": "None",
+    "question": "Show all order statuses"
   },
   "Get all payment amounts": {
-    "intent": "Retrieve all payment amounts",
-    "tables": ["payments"],
-    "columns": ["amount"],
+    "intent": "Retrieve a single column from payments",
+    "tables": [
+      "payments"
+    ],
+    "columns": [
+      "amount"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Get all payment amounts"
   },
   "List all job titles": {
-    "intent": "Retrieve unique job titles",
-    "tables": ["employees"],
-    "columns": ["jobTitle"],
-    "filters": "DISTINCT",
-    "joins": "None"
+    "intent": "Retrieve a single column from employees",
+    "tables": [
+      "employees"
+    ],
+    "columns": [
+      "\"jobTitle\""
+    ],
+    "filters": "None",
+    "joins": "None",
+    "question": "List all job titles"
   },
   "Get customer phone numbers": {
-    "intent": "Retrieve customer names and phone numbers",
-    "tables": ["customers"],
-    "columns": ["customerName", "phone"],
+    "intent": "Retrieve a single column from customers",
+    "tables": [
+      "customers"
+    ],
+    "columns": [
+      "phone"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Get customer phone numbers"
   },
   "Show product MSRP values": {
-    "intent": "Retrieve product names and MSRP",
-    "tables": ["products"],
-    "columns": ["productName", "MSRP"],
+    "intent": "Retrieve a single column from products",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "\"MSRP\""
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Show product MSRP values"
   },
   "List order numbers": {
-    "intent": "Retrieve all order numbers",
-    "tables": ["orders"],
-    "columns": ["orderNumber"],
+    "intent": "Retrieve a single column from orders",
+    "tables": [
+      "orders"
+    ],
+    "columns": [
+      "\"orderNumber\""
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "List order numbers"
   },
   "Get orders with customer names": {
-    "intent": "Retrieve orders with customer names",
-    "tables": ["orders", "customers"],
-    "columns": ["orderNumber", "customerName"],
+    "intent": "Retrieve orders together with related customers information",
+    "tables": [
+      "orders o",
+      "customers c"
+    ],
+    "columns": [
+      "o.\"orderNumber\"",
+      "c.\"customerName\""
+    ],
     "filters": "None",
-    "joins": ["orders.customerNumber = customers.customerNumber"]
+    "joins": [
+      "orders o JOIN customers c ON o.\"customerNumber\" = c.\"customerNumber\""
+    ],
+    "question": "Get orders with customer names"
   },
   "Get employees with office city": {
-    "intent": "Retrieve employees with their office city",
-    "tables": ["employees", "offices"],
-    "columns": ["firstName", "lastName", "city"],
+    "intent": "Retrieve employees together with related offices information",
+    "tables": [
+      "employees e",
+      "offices of"
+    ],
+    "columns": [
+      "e.\"firstName\"",
+      "e.\"lastName\"",
+      "of.\"city\""
+    ],
     "filters": "None",
-    "joins": ["employees.officeCode = offices.officeCode"]
+    "joins": [
+      "employees e JOIN offices of ON e.\"officeCode\" = of.\"officeCode\""
+    ],
+    "question": "Get employees with office city"
   },
   "Get payments with customer names": {
-    "intent": "Retrieve payments with customer names",
-    "tables": ["payments", "customers"],
-    "columns": ["checkNumber", "amount", "customerName"],
+    "intent": "Retrieve payments together with related customers information",
+    "tables": [
+      "payments pm",
+      "customers c"
+    ],
+    "columns": [
+      "pm.\"checkNumber\"",
+      "pm.amount",
+      "c.\"customerName\""
+    ],
     "filters": "None",
-    "joins": ["payments.customerNumber = customers.customerNumber"]
+    "joins": [
+      "payments pm JOIN customers c ON pm.\"customerNumber\" = c.\"customerNumber\""
+    ],
+    "question": "Get payments with customer names"
   },
   "Get order details with product names": {
-    "intent": "Retrieve order details with product names",
-    "tables": ["orderdetails", "products"],
-    "columns": ["orderNumber", "quantityOrdered", "priceEach", "productName"],
+    "intent": "Retrieve orderdetails together with related products information",
+    "tables": [
+      "orderdetails od",
+      "products p"
+    ],
+    "columns": [
+      "od.\"orderNumber\"",
+      "p.\"productName\"",
+      "od.\"quantityOrdered\""
+    ],
     "filters": "None",
-    "joins": ["orderdetails.productCode = products.productCode"]
+    "joins": [
+      "orderdetails od JOIN products p ON od.\"productCode\" = p.\"productCode\""
+    ],
+    "question": "Get order details with product names"
   },
   "Get products with product line description": {
-    "intent": "Retrieve products with product line description",
-    "tables": ["products", "productlines"],
-    "columns": ["productName", "textDescription"],
+    "intent": "Retrieve products together with related productlines information",
+    "tables": [
+      "products p",
+      "productlines pl"
+    ],
+    "columns": [
+      "p.\"productName\"",
+      "pl.\"textDescription\""
+    ],
     "filters": "None",
-    "joins": ["products.productLine = productlines.productLine"]
+    "joins": [
+      "products p JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\""
+    ],
+    "question": "Get products with product line description"
   },
   "Get customers with sales rep names": {
-    "intent": "Retrieve customers with sales representative names",
-    "tables": ["customers", "employees"],
-    "columns": ["customerName", "firstName", "lastName"],
+    "intent": "Retrieve customers together with related employees information",
+    "tables": [
+      "customers c",
+      "employees e"
+    ],
+    "columns": [
+      "c.\"customerName\"",
+      "e.\"firstName\"",
+      "e.\"lastName\""
+    ],
     "filters": "None",
-    "joins": ["customers.salesRepEmployeeNumber = employees.employeeNumber"]
+    "joins": [
+      "customers c JOIN employees e ON c.\"salesRepEmployeeNumber\" = e.\"employeeNumber\""
+    ],
+    "question": "Get customers with sales rep names"
   },
   "Get orders with customer city": {
-    "intent": "Retrieve orders with customer city",
-    "tables": ["orders", "customers"],
-    "columns": ["orderNumber", "city"],
+    "intent": "Retrieve orders together with related customers information",
+    "tables": [
+      "orders o",
+      "customers c"
+    ],
+    "columns": [
+      "o.\"orderNumber\"",
+      "c.city"
+    ],
     "filters": "None",
-    "joins": ["orders.customerNumber = customers.customerNumber"]
+    "joins": [
+      "orders o JOIN customers c ON o.\"customerNumber\" = c.\"customerNumber\""
+    ],
+    "question": "Get orders with customer city"
   },
   "Get employees and their manager": {
-    "intent": "Retrieve employees and their manager names",
-    "tables": ["employees"],
-    "columns": ["firstName", "lastName", "manager_firstName", "manager_lastName"],
+    "intent": "Retrieve employees together with their manager (self join)",
+    "tables": [
+      "employees e",
+      "employees m"
+    ],
+    "columns": [
+      "e.\"firstName\"",
+      "e.\"lastName\"",
+      "m.\"firstName\" AS \"managerFirstName\"",
+      "m.\"lastName\" AS \"managerLastName\""
+    ],
     "filters": "None",
-    "joins": ["employees.reportsTo = employees.employeeNumber"]
+    "joins": [
+      "employees e JOIN employees m ON e.\"reportsTo\" = m.\"employeeNumber\""
+    ],
+    "question": "Get employees and their manager"
   },
   "Get orderdetails with product vendor": {
-    "intent": "Retrieve order details with product vendor",
-    "tables": ["orderdetails", "products"],
-    "columns": ["orderNumber", "productName", "productVendor"],
+    "intent": "Retrieve orderdetails together with related products information",
+    "tables": [
+      "orderdetails od",
+      "products p"
+    ],
+    "columns": [
+      "od.\"orderNumber\"",
+      "p.\"productVendor\""
+    ],
     "filters": "None",
-    "joins": ["orderdetails.productCode = products.productCode"]
+    "joins": [
+      "orderdetails od JOIN products p ON od.\"productCode\" = p.\"productCode\""
+    ],
+    "question": "Get orderdetails with product vendor"
   },
   "Get payments with customer country": {
-    "intent": "Retrieve payments with customer country",
-    "tables": ["payments", "customers"],
-    "columns": ["checkNumber", "amount", "country"],
+    "intent": "Retrieve payments together with related customers information",
+    "tables": [
+      "payments pm",
+      "customers c"
+    ],
+    "columns": [
+      "pm.\"checkNumber\"",
+      "c.country"
+    ],
     "filters": "None",
-    "joins": ["payments.customerNumber = customers.customerNumber"]
+    "joins": [
+      "payments pm JOIN customers c ON pm.\"customerNumber\" = c.\"customerNumber\""
+    ],
+    "question": "Get payments with customer country"
   },
   "Count customers per country": {
-    "intent": "Count customers per country",
-    "tables": ["customers"],
-    "columns": ["country", "COUNT(*)"],
+    "intent": "COUNT of customers grouped by country",
+    "tables": [
+      "customers"
+    ],
+    "columns": [
+      "country",
+      "COUNT(*) AS result"
+    ],
     "filters": "GROUP BY country",
-    "joins": "None"
+    "joins": "None",
+    "question": "Count customers per country"
   },
   "Total payments per customer": {
-    "intent": "Calculate total payments per customer",
-    "tables": ["payments", "customers"],
-    "columns": ["customerName", "SUM(amount)"],
-    "filters": "GROUP BY customerNumber, customerName",
-    "joins": ["payments.customerNumber = customers.customerNumber"]
+    "intent": "SUM of payments grouped by customer",
+    "tables": [
+      "payments pm",
+      "customers c"
+    ],
+    "columns": [
+      "c.\"customerNumber\"",
+      "SUM(pm.amount) AS result"
+    ],
+    "filters": "GROUP BY c.\"customerNumber\"",
+    "joins": [
+      "payments pm JOIN customers c ON pm.\"customerNumber\" = c.\"customerNumber\""
+    ],
+    "question": "Total payments per customer"
   },
   "Number of orders per status": {
-    "intent": "Count orders per status",
-    "tables": ["orders"],
-    "columns": ["status", "COUNT(*)"],
+    "intent": "COUNT of orders grouped by status",
+    "tables": [
+      "orders"
+    ],
+    "columns": [
+      "status",
+      "COUNT(*) AS result"
+    ],
     "filters": "GROUP BY status",
-    "joins": "None"
+    "joins": "None",
+    "question": "Number of orders per status"
   },
   "Products per product line": {
-    "intent": "Count products per product line",
-    "tables": ["productlines", "products"],
-    "columns": ["productLine", "COUNT(productCode)"],
-    "filters": "GROUP BY productLine",
-    "joins": ["products.productLine = productlines.productLine"]
+    "intent": "COUNT of products grouped by product line",
+    "tables": [
+      "products p",
+      "productlines pl"
+    ],
+    "columns": [
+      "pl.\"productLine\"",
+      "COUNT(*) AS result"
+    ],
+    "filters": "GROUP BY pl.\"productLine\"",
+    "joins": [
+      "products p JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\""
+    ],
+    "question": "Products per product line"
   },
   "Employees per office": {
-    "intent": "Count employees per office",
-    "tables": ["offices", "employees"],
-    "columns": ["city", "COUNT(employeeNumber)"],
-    "filters": "GROUP BY officeCode, city",
-    "joins": ["employees.officeCode = offices.officeCode"]
+    "intent": "COUNT of employees grouped by office",
+    "tables": [
+      "employees e",
+      "offices of"
+    ],
+    "columns": [
+      "of.\"officeCode\"",
+      "COUNT(*) AS result"
+    ],
+    "filters": "GROUP BY of.\"officeCode\"",
+    "joins": [
+      "employees e JOIN offices of ON e.\"officeCode\" = of.\"officeCode\""
+    ],
+    "question": "Employees per office"
   },
   "Total stock per product vendor": {
-    "intent": "Calculate total stock per product vendor",
-    "tables": ["products"],
-    "columns": ["productVendor", "SUM(quantityInStock)"],
-    "filters": "GROUP BY productVendor",
-    "joins": "None"
+    "intent": "SUM of stock grouped by vendor",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "\"productVendor\"",
+      "SUM(\"quantityInStock\") AS result"
+    ],
+    "filters": "GROUP BY \"productVendor\"",
+    "joins": "None",
+    "question": "Total stock per product vendor"
   },
   "Average buy price per product line": {
-    "intent": "Calculate average buy price per product line",
-    "tables": ["products"],
-    "columns": ["productLine", "AVG(buyPrice)"],
-    "filters": "GROUP BY productLine",
-    "joins": "None"
+    "intent": "AVG of buy price grouped by product line",
+    "tables": [
+      "products p",
+      "productlines pl"
+    ],
+    "columns": [
+      "pl.\"productLine\"",
+      "AVG(p.\"buyPrice\") AS result"
+    ],
+    "filters": "GROUP BY pl.\"productLine\"",
+    "joins": [
+      "products p JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\""
+    ],
+    "question": "Average buy price per product line"
   },
   "Orders per customer": {
-    "intent": "Count orders per customer",
-    "tables": ["customers", "orders"],
-    "columns": ["customerName", "COUNT(orderNumber)"],
-    "filters": "GROUP BY customerNumber, customerName",
-    "joins": ["orders.customerNumber = customers.customerNumber"]
+    "intent": "COUNT of orders grouped by customer",
+    "tables": [
+      "orders o",
+      "customers c"
+    ],
+    "columns": [
+      "c.\"customerNumber\"",
+      "COUNT(*) AS result"
+    ],
+    "filters": "GROUP BY c.\"customerNumber\"",
+    "joins": [
+      "orders o JOIN customers c ON o.\"customerNumber\" = c.\"customerNumber\""
+    ],
+    "question": "Orders per customer"
   },
   "Max MSRP per product line": {
-    "intent": "Find maximum MSRP per product line",
-    "tables": ["products"],
-    "columns": ["productLine", "MAX(MSRP)"],
-    "filters": "GROUP BY productLine",
-    "joins": "None"
+    "intent": "MAX of msrp grouped by product line",
+    "tables": [
+      "products p",
+      "productlines pl"
+    ],
+    "columns": [
+      "pl.\"productLine\"",
+      "MAX(p.\"MSRP\") AS result"
+    ],
+    "filters": "GROUP BY pl.\"productLine\"",
+    "joins": [
+      "products p JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\""
+    ],
+    "question": "Max MSRP per product line"
   },
   "Min buy price per vendor": {
-    "intent": "Find minimum buy price per vendor",
-    "tables": ["products"],
-    "columns": ["productVendor", "MIN(buyPrice)"],
-    "filters": "GROUP BY productVendor",
-    "joins": "None"
+    "intent": "MIN of buy price grouped by vendor",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "\"productVendor\"",
+      "MIN(\"buyPrice\") AS result"
+    ],
+    "filters": "GROUP BY \"productVendor\"",
+    "joins": "None",
+    "question": "Min buy price per vendor"
   },
   "Total number of customers": {
-    "intent": "Count total customers",
-    "tables": ["customers"],
-    "columns": ["COUNT(*)"],
+    "intent": "COUNT of customers",
+    "tables": [
+      "customers"
+    ],
+    "columns": [
+      "COUNT(*) AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Total number of customers"
   },
   "Total number of products": {
-    "intent": "Count total products",
-    "tables": ["products"],
-    "columns": ["COUNT(*)"],
+    "intent": "COUNT of products",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "COUNT(*) AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Total number of products"
   },
   "Total revenue from payments": {
-    "intent": "Calculate total revenue from payments",
-    "tables": ["payments"],
-    "columns": ["SUM(amount)"],
+    "intent": "SUM of revenue from payments",
+    "tables": [
+      "payments"
+    ],
+    "columns": [
+      "SUM(amount) AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Total revenue from payments"
   },
   "Average product price": {
-    "intent": "Calculate average product buy price",
-    "tables": ["products"],
-    "columns": ["AVG(buyPrice)"],
+    "intent": "AVG of product price",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "AVG(\"buyPrice\") AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Average product price"
   },
   "Max payment amount": {
-    "intent": "Find maximum payment amount",
-    "tables": ["payments"],
-    "columns": ["MAX(amount)"],
+    "intent": "MAX of payment amount",
+    "tables": [
+      "payments"
+    ],
+    "columns": [
+      "MAX(amount) AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Max payment amount"
   },
   "Min payment amount": {
-    "intent": "Find minimum payment amount",
-    "tables": ["payments"],
-    "columns": ["MIN(amount)"],
+    "intent": "MIN of payment amount",
+    "tables": [
+      "payments"
+    ],
+    "columns": [
+      "MIN(amount) AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Min payment amount"
   },
   "Count total orders": {
-    "intent": "Count total orders",
-    "tables": ["orders"],
-    "columns": ["COUNT(*)"],
+    "intent": "COUNT of orders",
+    "tables": [
+      "orders"
+    ],
+    "columns": [
+      "COUNT(*) AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Count total orders"
   },
   "Total quantity in stock": {
-    "intent": "Calculate total quantity in stock",
-    "tables": ["products"],
-    "columns": ["SUM(quantityInStock)"],
+    "intent": "SUM of quantity in stock",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "SUM(\"quantityInStock\") AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Total quantity in stock"
   },
   "Average MSRP": {
-    "intent": "Calculate average MSRP",
-    "tables": ["products"],
-    "columns": ["AVG(MSRP)"],
+    "intent": "AVG of msrp",
+    "tables": [
+      "products"
+    ],
+    "columns": [
+      "AVG(\"MSRP\") AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Average MSRP"
   },
   "Number of employees": {
-    "intent": "Count total employees",
-    "tables": ["employees"],
-    "columns": ["COUNT(*)"],
+    "intent": "COUNT of employees",
+    "tables": [
+      "employees"
+    ],
+    "columns": [
+      "COUNT(*) AS result"
+    ],
     "filters": "None",
-    "joins": "None"
+    "joins": "None",
+    "question": "Number of employees"
   }
 }
