@@ -1,0 +1,434 @@
+2026-06-19 07:15:32,853 - INFO - Received question: List all products
+2026-06-19 07:15:32,853 - INFO - Decomposition: {'intent': 'Retrieve all rows from products', 'tables': ['products'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'List all products'}
+2026-06-19 07:15:32,853 - INFO - Generated SQL: SELECT * FROM products ;
+2026-06-19 07:15:32,854 - INFO - Attempt 1: executing -> SELECT * FROM products ;
+2026-06-19 07:15:32,871 - INFO - Success on attempt 1 (110 rows, 17ms)
+2026-06-19 07:15:32,871 - INFO - Execution finished: success=True attempts=1 rows=110 time=17ms
+2026-06-19 07:15:32,874 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:32,875 - INFO - Received question: Get all customers
+2026-06-19 07:15:32,875 - INFO - Decomposition: {'intent': 'Retrieve all rows from customers', 'tables': ['customers'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'Get all customers'}
+2026-06-19 07:15:32,875 - INFO - Generated SQL: SELECT * FROM customers ;
+2026-06-19 07:15:32,875 - INFO - Attempt 1: executing -> SELECT * FROM customers ;
+2026-06-19 07:15:32,892 - INFO - Success on attempt 1 (122 rows, 16ms)
+2026-06-19 07:15:32,894 - INFO - Execution finished: success=True attempts=1 rows=122 time=16ms
+2026-06-19 07:15:32,895 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:32,897 - INFO - Received question: Show all orders
+2026-06-19 07:15:32,897 - INFO - Decomposition: {'intent': 'Retrieve all rows from orders', 'tables': ['orders'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'Show all orders'}
+2026-06-19 07:15:32,897 - INFO - Generated SQL: SELECT * FROM orders ;
+2026-06-19 07:15:32,897 - INFO - Attempt 1: executing -> SELECT * FROM orders ;
+2026-06-19 07:15:32,913 - INFO - Success on attempt 1 (326 rows, 16ms)
+2026-06-19 07:15:32,915 - INFO - Execution finished: success=True attempts=1 rows=326 time=16ms
+2026-06-19 07:15:32,916 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:32,918 - INFO - Received question: List all employees
+2026-06-19 07:15:32,919 - INFO - Decomposition: {'intent': 'Retrieve all rows from employees', 'tables': ['employees'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'List all employees'}
+2026-06-19 07:15:32,919 - INFO - Generated SQL: SELECT * FROM employees ;
+2026-06-19 07:15:32,919 - INFO - Attempt 1: executing -> SELECT * FROM employees ;
+2026-06-19 07:15:32,932 - INFO - Success on attempt 1 (23 rows, 13ms)
+2026-06-19 07:15:32,932 - INFO - Execution finished: success=True attempts=1 rows=23 time=13ms
+2026-06-19 07:15:32,933 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:32,934 - INFO - Received question: Get all offices
+2026-06-19 07:15:32,934 - INFO - Decomposition: {'intent': 'Retrieve all rows from offices', 'tables': ['offices'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'Get all offices'}
+2026-06-19 07:15:32,934 - INFO - Generated SQL: SELECT * FROM offices ;
+2026-06-19 07:15:32,934 - INFO - Attempt 1: executing -> SELECT * FROM offices ;
+2026-06-19 07:15:32,947 - INFO - Success on attempt 1 (7 rows, 12ms)
+2026-06-19 07:15:32,947 - INFO - Execution finished: success=True attempts=1 rows=7 time=12ms
+2026-06-19 07:15:32,948 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:32,949 - INFO - Received question: Show all product lines
+2026-06-19 07:15:32,949 - INFO - Decomposition: {'intent': 'Retrieve all rows from productlines', 'tables': ['productlines'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'Show all product lines'}
+2026-06-19 07:15:32,949 - INFO - Generated SQL: SELECT * FROM productlines ;
+2026-06-19 07:15:32,949 - INFO - Attempt 1: executing -> SELECT * FROM productlines ;
+2026-06-19 07:15:32,961 - INFO - Success on attempt 1 (7 rows, 12ms)
+2026-06-19 07:15:32,961 - INFO - Execution finished: success=True attempts=1 rows=7 time=12ms
+2026-06-19 07:15:32,962 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:32,964 - INFO - Received question: List all payments
+2026-06-19 07:15:32,964 - INFO - Decomposition: {'intent': 'Retrieve all rows from payments', 'tables': ['payments'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'List all payments'}
+2026-06-19 07:15:32,964 - INFO - Generated SQL: SELECT * FROM payments ;
+2026-06-19 07:15:32,964 - INFO - Attempt 1: executing -> SELECT * FROM payments ;
+2026-06-19 07:15:32,976 - INFO - Success on attempt 1 (273 rows, 12ms)
+2026-06-19 07:15:32,978 - INFO - Execution finished: success=True attempts=1 rows=273 time=12ms
+2026-06-19 07:15:32,979 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:32,980 - INFO - Received question: Get product names and prices
+2026-06-19 07:15:32,980 - INFO - Decomposition: {'intent': 'Retrieve specific columns from products', 'tables': ['products'], 'columns': ['"productName"', '"buyPrice"'], 'filters': 'None', 'joins': 'None', 'question': 'Get product names and prices'}
+2026-06-19 07:15:32,981 - INFO - Generated SQL: SELECT "productName", "buyPrice" FROM products ;
+2026-06-19 07:15:32,981 - INFO - Attempt 1: executing -> SELECT "productName", "buyPrice" FROM products ;
+2026-06-19 07:15:32,993 - INFO - Success on attempt 1 (110 rows, 12ms)
+2026-06-19 07:15:32,993 - INFO - Execution finished: success=True attempts=1 rows=110 time=12ms
+2026-06-19 07:15:32,994 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:32,995 - INFO - Received question: Get customer names and cities
+2026-06-19 07:15:32,995 - INFO - Decomposition: {'intent': 'Retrieve specific columns from customers', 'tables': ['customers'], 'columns': ['"customerName"', 'city'], 'filters': 'None', 'joins': 'None', 'question': 'Get customer names and cities'}
+2026-06-19 07:15:32,995 - INFO - Generated SQL: SELECT "customerName", city FROM customers ;
+2026-06-19 07:15:32,995 - INFO - Attempt 1: executing -> SELECT "customerName", city FROM customers ;
+2026-06-19 07:15:33,009 - INFO - Success on attempt 1 (122 rows, 13ms)
+2026-06-19 07:15:33,009 - INFO - Execution finished: success=True attempts=1 rows=122 time=13ms
+2026-06-19 07:15:33,010 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,011 - INFO - Received question: List employee first and last names
+2026-06-19 07:15:33,011 - INFO - Decomposition: {'intent': 'Retrieve specific columns from employees', 'tables': ['employees'], 'columns': ['"firstName"', '"lastName"'], 'filters': 'None', 'joins': 'None', 'question': 'List employee first and last names'}
+2026-06-19 07:15:33,011 - INFO - Generated SQL: SELECT "firstName", "lastName" FROM employees ;
+2026-06-19 07:15:33,011 - INFO - Attempt 1: executing -> SELECT "firstName", "lastName" FROM employees ;
+2026-06-19 07:15:33,023 - INFO - Success on attempt 1 (23 rows, 11ms)
+2026-06-19 07:15:33,023 - INFO - Execution finished: success=True attempts=1 rows=23 time=11ms
+2026-06-19 07:15:33,025 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,026 - INFO - Received question: Get all order dates
+2026-06-19 07:15:33,026 - INFO - Decomposition: {'intent': 'Retrieve a single column from orders', 'tables': ['orders'], 'columns': ['"orderDate"'], 'filters': 'None', 'joins': 'None', 'question': 'Get all order dates'}
+2026-06-19 07:15:33,026 - INFO - Generated SQL: SELECT "orderDate" FROM orders ;
+2026-06-19 07:15:33,026 - INFO - Attempt 1: executing -> SELECT "orderDate" FROM orders ;
+2026-06-19 07:15:33,038 - INFO - Success on attempt 1 (326 rows, 11ms)
+2026-06-19 07:15:33,040 - INFO - Execution finished: success=True attempts=1 rows=326 time=11ms
+2026-06-19 07:15:33,041 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,042 - INFO - Received question: Show product vendor list
+2026-06-19 07:15:33,042 - INFO - Decomposition: {'intent': 'Retrieve a single column from products', 'tables': ['products'], 'columns': ['"productVendor"'], 'filters': 'None', 'joins': 'None', 'question': 'Show product vendor list'}
+2026-06-19 07:15:33,042 - INFO - Generated SQL: SELECT "productVendor" FROM products ;
+2026-06-19 07:15:33,042 - INFO - Attempt 1: executing -> SELECT "productVendor" FROM products ;
+2026-06-19 07:15:33,055 - INFO - Success on attempt 1 (110 rows, 12ms)
+2026-06-19 07:15:33,055 - INFO - Execution finished: success=True attempts=1 rows=110 time=12ms
+2026-06-19 07:15:33,055 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,056 - INFO - Received question: Get all product codes
+2026-06-19 07:15:33,056 - INFO - Decomposition: {'intent': 'Retrieve a single column from products', 'tables': ['products'], 'columns': ['"productCode"'], 'filters': 'None', 'joins': 'None', 'question': 'Get all product codes'}
+2026-06-19 07:15:33,056 - INFO - Generated SQL: SELECT "productCode" FROM products ;
+2026-06-19 07:15:33,056 - INFO - Attempt 1: executing -> SELECT "productCode" FROM products ;
+2026-06-19 07:15:33,067 - INFO - Success on attempt 1 (110 rows, 10ms)
+2026-06-19 07:15:33,069 - INFO - Execution finished: success=True attempts=1 rows=110 time=10ms
+2026-06-19 07:15:33,070 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,070 - INFO - Received question: List all countries from offices
+2026-06-19 07:15:33,071 - INFO - Decomposition: {'intent': 'Retrieve a single column from offices', 'tables': ['offices'], 'columns': ['country'], 'filters': 'None', 'joins': 'None', 'question': 'List all countries from offices'}
+2026-06-19 07:15:33,071 - INFO - Generated SQL: SELECT country FROM offices ;
+2026-06-19 07:15:33,071 - INFO - Attempt 1: executing -> SELECT country FROM offices ;
+2026-06-19 07:15:33,083 - INFO - Success on attempt 1 (7 rows, 12ms)
+2026-06-19 07:15:33,083 - INFO - Execution finished: success=True attempts=1 rows=7 time=12ms
+2026-06-19 07:15:33,084 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,085 - INFO - Received question: Show all order statuses
+2026-06-19 07:15:33,085 - INFO - Decomposition: {'intent': 'Retrieve a single column from orders', 'tables': ['orders'], 'columns': ['status'], 'filters': 'None', 'joins': 'None', 'question': 'Show all order statuses'}
+2026-06-19 07:15:33,085 - INFO - Generated SQL: SELECT status FROM orders ;
+2026-06-19 07:15:33,085 - INFO - Attempt 1: executing -> SELECT status FROM orders ;
+2026-06-19 07:15:33,099 - INFO - Success on attempt 1 (326 rows, 14ms)
+2026-06-19 07:15:33,100 - INFO - Execution finished: success=True attempts=1 rows=326 time=14ms
+2026-06-19 07:15:33,100 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,101 - INFO - Received question: Get all payment amounts
+2026-06-19 07:15:33,101 - INFO - Decomposition: {'intent': 'Retrieve a single column from payments', 'tables': ['payments'], 'columns': ['amount'], 'filters': 'None', 'joins': 'None', 'question': 'Get all payment amounts'}
+2026-06-19 07:15:33,101 - INFO - Generated SQL: SELECT amount FROM payments ;
+2026-06-19 07:15:33,101 - INFO - Attempt 1: executing -> SELECT amount FROM payments ;
+2026-06-19 07:15:33,114 - INFO - Success on attempt 1 (273 rows, 12ms)
+2026-06-19 07:15:33,115 - INFO - Execution finished: success=True attempts=1 rows=273 time=12ms
+2026-06-19 07:15:33,116 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,117 - INFO - Received question: List all job titles
+2026-06-19 07:15:33,117 - INFO - Decomposition: {'intent': 'Retrieve a single column from employees', 'tables': ['employees'], 'columns': ['"jobTitle"'], 'filters': 'None', 'joins': 'None', 'question': 'List all job titles'}
+2026-06-19 07:15:33,117 - INFO - Generated SQL: SELECT "jobTitle" FROM employees ;
+2026-06-19 07:15:33,117 - INFO - Attempt 1: executing -> SELECT "jobTitle" FROM employees ;
+2026-06-19 07:15:33,129 - INFO - Success on attempt 1 (23 rows, 12ms)
+2026-06-19 07:15:33,129 - INFO - Execution finished: success=True attempts=1 rows=23 time=12ms
+2026-06-19 07:15:33,131 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,132 - INFO - Received question: Get customer phone numbers
+2026-06-19 07:15:33,132 - INFO - Decomposition: {'intent': 'Retrieve a single column from customers', 'tables': ['customers'], 'columns': ['phone'], 'filters': 'None', 'joins': 'None', 'question': 'Get customer phone numbers'}
+2026-06-19 07:15:33,132 - INFO - Generated SQL: SELECT phone FROM customers ;
+2026-06-19 07:15:33,132 - INFO - Attempt 1: executing -> SELECT phone FROM customers ;
+2026-06-19 07:15:33,143 - INFO - Success on attempt 1 (122 rows, 11ms)
+2026-06-19 07:15:33,143 - INFO - Execution finished: success=True attempts=1 rows=122 time=11ms
+2026-06-19 07:15:33,144 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,146 - INFO - Received question: Show product MSRP values
+2026-06-19 07:15:33,146 - INFO - Decomposition: {'intent': 'Retrieve a single column from products', 'tables': ['products'], 'columns': ['"MSRP"'], 'filters': 'None', 'joins': 'None', 'question': 'Show product MSRP values'}
+2026-06-19 07:15:33,146 - INFO - Generated SQL: SELECT "MSRP" FROM products ;
+2026-06-19 07:15:33,146 - INFO - Attempt 1: executing -> SELECT "MSRP" FROM products ;
+2026-06-19 07:15:33,160 - INFO - Success on attempt 1 (110 rows, 13ms)
+2026-06-19 07:15:33,160 - INFO - Execution finished: success=True attempts=1 rows=110 time=13ms
+2026-06-19 07:15:33,161 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,162 - INFO - Received question: List order numbers
+2026-06-19 07:15:33,162 - INFO - Decomposition: {'intent': 'Retrieve a single column from orders', 'tables': ['orders'], 'columns': ['"orderNumber"'], 'filters': 'None', 'joins': 'None', 'question': 'List order numbers'}
+2026-06-19 07:15:33,162 - INFO - Generated SQL: SELECT "orderNumber" FROM orders ;
+2026-06-19 07:15:33,162 - INFO - Attempt 1: executing -> SELECT "orderNumber" FROM orders ;
+2026-06-19 07:15:33,175 - INFO - Success on attempt 1 (326 rows, 12ms)
+2026-06-19 07:15:33,176 - INFO - Execution finished: success=True attempts=1 rows=326 time=12ms
+2026-06-19 07:15:33,177 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,178 - INFO - Received question: Get orders with customer names
+2026-06-19 07:15:33,178 - INFO - Decomposition: {'intent': 'Retrieve orders together with related customers information', 'tables': ['orders o', 'customers c'], 'columns': ['o."orderNumber"', 'c."customerName"'], 'filters': 'None', 'joins': ['orders o JOIN customers c ON o."customerNumber" = c."customerNumber"'], 'question': 'Get orders with customer names'}
+2026-06-19 07:15:33,178 - INFO - Generated SQL: SELECT o."orderNumber", c."customerName" FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" ;
+2026-06-19 07:15:33,178 - INFO - Attempt 1: executing -> SELECT o."orderNumber", c."customerName" FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" ;
+2026-06-19 07:15:33,191 - INFO - Success on attempt 1 (326 rows, 13ms)
+2026-06-19 07:15:33,193 - INFO - Execution finished: success=True attempts=1 rows=326 time=13ms
+2026-06-19 07:15:33,194 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,195 - INFO - Received question: Get employees with office city
+2026-06-19 07:15:33,195 - INFO - Decomposition: {'intent': 'Retrieve employees together with related offices information', 'tables': ['employees e', 'offices of'], 'columns': ['e."firstName"', 'e."lastName"', 'of."city"'], 'filters': 'None', 'joins': ['employees e JOIN offices of ON e."officeCode" = of."officeCode"'], 'question': 'Get employees with office city'}
+2026-06-19 07:15:33,195 - INFO - Generated SQL: SELECT e."firstName", e."lastName", of."city" FROM employees e JOIN offices of ON e."officeCode" = of."officeCode" ;
+2026-06-19 07:15:33,195 - INFO - Attempt 1: executing -> SELECT e."firstName", e."lastName", of."city" FROM employees e JOIN offices of ON e."officeCode" = of."officeCode" ;
+2026-06-19 07:15:33,206 - INFO - Success on attempt 1 (23 rows, 11ms)
+2026-06-19 07:15:33,207 - INFO - Execution finished: success=True attempts=1 rows=23 time=11ms
+2026-06-19 07:15:33,207 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,210 - INFO - Received question: Get payments with customer names
+2026-06-19 07:15:33,210 - INFO - Decomposition: {'intent': 'Retrieve payments together with related customers information', 'tables': ['payments pm', 'customers c'], 'columns': ['pm."checkNumber"', 'pm.amount', 'c."customerName"'], 'filters': 'None', 'joins': ['payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber"'], 'question': 'Get payments with customer names'}
+2026-06-19 07:15:33,210 - INFO - Generated SQL: SELECT pm."checkNumber", pm.amount, c."customerName" FROM payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber" ;
+2026-06-19 07:15:33,210 - INFO - Attempt 1: executing -> SELECT pm."checkNumber", pm.amount, c."customerName" FROM payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber" ;
+2026-06-19 07:15:33,225 - INFO - Success on attempt 1 (273 rows, 14ms)
+2026-06-19 07:15:33,225 - INFO - Execution finished: success=True attempts=1 rows=273 time=14ms
+2026-06-19 07:15:33,226 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,227 - INFO - Received question: Get order details with product names
+2026-06-19 07:15:33,227 - INFO - Decomposition: {'intent': 'Retrieve orderdetails together with related products information', 'tables': ['orderdetails od', 'products p'], 'columns': ['od."orderNumber"', 'p."productName"', 'od."quantityOrdered"'], 'filters': 'None', 'joins': ['orderdetails od JOIN products p ON od."productCode" = p."productCode"'], 'question': 'Get order details with product names'}
+2026-06-19 07:15:33,227 - INFO - Generated SQL: SELECT od."orderNumber", p."productName", od."quantityOrdered" FROM orderdetails od JOIN products p ON od."productCode" = p."productCode" ;
+2026-06-19 07:15:33,227 - INFO - Attempt 1: executing -> SELECT od."orderNumber", p."productName", od."quantityOrdered" FROM orderdetails od JOIN products p ON od."productCode" = p."productCode" ;
+2026-06-19 07:15:33,265 - INFO - Success on attempt 1 (2996 rows, 37ms)
+2026-06-19 07:15:33,265 - INFO - Execution finished: success=True attempts=1 rows=2996 time=37ms
+2026-06-19 07:15:33,269 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,271 - INFO - Received question: Get products with product line description
+2026-06-19 07:15:33,272 - INFO - Decomposition: {'intent': 'Retrieve products together with related productlines information', 'tables': ['products p', 'productlines pl'], 'columns': ['p."productName"', 'pl."textDescription"'], 'filters': 'None', 'joins': ['products p JOIN productlines pl ON p."productLine" = pl."productLine"'], 'question': 'Get products with product line description'}
+2026-06-19 07:15:33,272 - INFO - Generated SQL: SELECT p."productName", pl."textDescription" FROM products p JOIN productlines pl ON p."productLine" = pl."productLine" ;
+2026-06-19 07:15:33,272 - INFO - Attempt 1: executing -> SELECT p."productName", pl."textDescription" FROM products p JOIN productlines pl ON p."productLine" = pl."productLine" ;
+2026-06-19 07:15:33,285 - INFO - Success on attempt 1 (110 rows, 12ms)
+2026-06-19 07:15:33,285 - INFO - Execution finished: success=True attempts=1 rows=110 time=12ms
+2026-06-19 07:15:33,287 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,289 - INFO - Received question: Get customers with sales rep names
+2026-06-19 07:15:33,289 - INFO - Decomposition: {'intent': 'Retrieve customers together with related employees information', 'tables': ['customers c', 'employees e'], 'columns': ['c."customerName"', 'e."firstName"', 'e."lastName"'], 'filters': 'None', 'joins': ['customers c JOIN employees e ON c."salesRepEmployeeNumber" = e."employeeNumber"'], 'question': 'Get customers with sales rep names'}
+2026-06-19 07:15:33,289 - INFO - Generated SQL: SELECT c."customerName", e."firstName", e."lastName" FROM customers c JOIN employees e ON c."salesRepEmployeeNumber" = e."employeeNumber" ;
+2026-06-19 07:15:33,289 - INFO - Attempt 1: executing -> SELECT c."customerName", e."firstName", e."lastName" FROM customers c JOIN employees e ON c."salesRepEmployeeNumber" = e."employeeNumber" ;
+2026-06-19 07:15:33,303 - INFO - Success on attempt 1 (100 rows, 14ms)
+2026-06-19 07:15:33,304 - INFO - Execution finished: success=True attempts=1 rows=100 time=14ms
+2026-06-19 07:15:33,304 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,305 - INFO - Received question: Get orders with customer city
+2026-06-19 07:15:33,306 - INFO - Decomposition: {'intent': 'Retrieve orders together with related customers information', 'tables': ['orders o', 'customers c'], 'columns': ['o."orderNumber"', 'c.city'], 'filters': 'None', 'joins': ['orders o JOIN customers c ON o."customerNumber" = c."customerNumber"'], 'question': 'Get orders with customer city'}
+2026-06-19 07:15:33,306 - INFO - Generated SQL: SELECT o."orderNumber", c.city FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" ;
+2026-06-19 07:15:33,306 - INFO - Attempt 1: executing -> SELECT o."orderNumber", c.city FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" ;
+2026-06-19 07:15:33,318 - INFO - Success on attempt 1 (326 rows, 12ms)
+2026-06-19 07:15:33,320 - INFO - Execution finished: success=True attempts=1 rows=326 time=12ms
+2026-06-19 07:15:33,321 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,322 - INFO - Received question: Get employees and their manager
+2026-06-19 07:15:33,322 - INFO - Decomposition: {'intent': 'Retrieve employees together with their manager (self join)', 'tables': ['employees e', 'employees m'], 'columns': ['e."firstName"', 'e."lastName"', 'm."firstName" AS "managerFirstName"', 'm."lastName" AS "managerLastName"'], 'filters': 'None', 'joins': ['employees e JOIN employees m ON e."reportsTo" = m."employeeNumber"'], 'question': 'Get employees and their manager'}
+2026-06-19 07:15:33,322 - INFO - Generated SQL: SELECT e."firstName", e."lastName", m."firstName" AS "managerFirstName", m."lastName" AS "managerLastName" FROM employees e JOIN employees m ON e."reportsTo" = m."employeeNumber" ;
+2026-06-19 07:15:33,322 - INFO - Attempt 1: executing -> SELECT e."firstName", e."lastName", m."firstName" AS "managerFirstName", m."lastName" AS "managerLastName" FROM employees e JOIN employees m ON e."reportsTo" = m."employeeNumber" ;
+2026-06-19 07:15:33,335 - INFO - Success on attempt 1 (22 rows, 12ms)
+2026-06-19 07:15:33,335 - INFO - Execution finished: success=True attempts=1 rows=22 time=12ms
+2026-06-19 07:15:33,337 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,338 - INFO - Received question: Get orderdetails with product vendor
+2026-06-19 07:15:33,338 - INFO - Decomposition: {'intent': 'Retrieve orderdetails together with related products information', 'tables': ['orderdetails od', 'products p'], 'columns': ['od."orderNumber"', 'p."productVendor"'], 'filters': 'None', 'joins': ['orderdetails od JOIN products p ON od."productCode" = p."productCode"'], 'question': 'Get orderdetails with product vendor'}
+2026-06-19 07:15:33,338 - INFO - Generated SQL: SELECT od."orderNumber", p."productVendor" FROM orderdetails od JOIN products p ON od."productCode" = p."productCode" ;
+2026-06-19 07:15:33,338 - INFO - Attempt 1: executing -> SELECT od."orderNumber", p."productVendor" FROM orderdetails od JOIN products p ON od."productCode" = p."productCode" ;
+2026-06-19 07:15:33,359 - INFO - Success on attempt 1 (2996 rows, 21ms)
+2026-06-19 07:15:33,361 - INFO - Execution finished: success=True attempts=1 rows=2996 time=21ms
+2026-06-19 07:15:33,363 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,365 - INFO - Received question: Get payments with customer country
+2026-06-19 07:15:33,365 - INFO - Decomposition: {'intent': 'Retrieve payments together with related customers information', 'tables': ['payments pm', 'customers c'], 'columns': ['pm."checkNumber"', 'c.country'], 'filters': 'None', 'joins': ['payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber"'], 'question': 'Get payments with customer country'}
+2026-06-19 07:15:33,365 - INFO - Generated SQL: SELECT pm."checkNumber", c.country FROM payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber" ;
+2026-06-19 07:15:33,365 - INFO - Attempt 1: executing -> SELECT pm."checkNumber", c.country FROM payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber" ;
+2026-06-19 07:15:33,380 - INFO - Success on attempt 1 (273 rows, 14ms)
+2026-06-19 07:15:33,380 - INFO - Execution finished: success=True attempts=1 rows=273 time=14ms
+2026-06-19 07:15:33,381 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,382 - INFO - Received question: Count customers per country
+2026-06-19 07:15:33,383 - INFO - Decomposition: {'intent': 'COUNT of customers grouped by country', 'tables': ['customers'], 'columns': ['country', 'COUNT(*) AS result'], 'filters': 'GROUP BY country', 'joins': 'None', 'question': 'Count customers per country'}
+2026-06-19 07:15:33,383 - INFO - Generated SQL: SELECT country, COUNT(*) AS result FROM customers GROUP BY country;
+2026-06-19 07:15:33,383 - INFO - Attempt 1: executing -> SELECT country, COUNT(*) AS result FROM customers GROUP BY country;
+2026-06-19 07:15:33,395 - INFO - Success on attempt 1 (28 rows, 12ms)
+2026-06-19 07:15:33,397 - INFO - Execution finished: success=True attempts=1 rows=28 time=12ms
+2026-06-19 07:15:33,398 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,399 - INFO - Received question: Total payments per customer
+2026-06-19 07:15:33,399 - INFO - Decomposition: {'intent': 'SUM of payments grouped by customer', 'tables': ['payments pm', 'customers c'], 'columns': ['c."customerNumber"', 'SUM(pm.amount) AS result'], 'filters': 'GROUP BY c."customerNumber"', 'joins': ['payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber"'], 'question': 'Total payments per customer'}
+2026-06-19 07:15:33,399 - INFO - Generated SQL: SELECT c."customerNumber", SUM(pm.amount) AS result FROM payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber" GROUP BY c."customerNumber";
+2026-06-19 07:15:33,399 - INFO - Attempt 1: executing -> SELECT c."customerNumber", SUM(pm.amount) AS result FROM payments pm JOIN customers c ON pm."customerNumber" = c."customerNumber" GROUP BY c."customerNumber";
+2026-06-19 07:15:33,412 - INFO - Success on attempt 1 (98 rows, 12ms)
+2026-06-19 07:15:33,412 - INFO - Execution finished: success=True attempts=1 rows=98 time=12ms
+2026-06-19 07:15:33,414 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,416 - INFO - Received question: Number of orders per status
+2026-06-19 07:15:33,416 - INFO - Decomposition: {'intent': 'COUNT of orders grouped by status', 'tables': ['orders'], 'columns': ['status', 'COUNT(*) AS result'], 'filters': 'GROUP BY status', 'joins': 'None', 'question': 'Number of orders per status'}
+2026-06-19 07:15:33,416 - INFO - Generated SQL: SELECT status, COUNT(*) AS result FROM orders GROUP BY status;
+2026-06-19 07:15:33,416 - INFO - Attempt 1: executing -> SELECT status, COUNT(*) AS result FROM orders GROUP BY status;
+2026-06-19 07:15:33,428 - INFO - Success on attempt 1 (6 rows, 11ms)
+2026-06-19 07:15:33,428 - INFO - Execution finished: success=True attempts=1 rows=6 time=11ms
+2026-06-19 07:15:33,430 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,431 - INFO - Received question: Products per product line
+2026-06-19 07:15:33,432 - INFO - Decomposition: {'intent': 'COUNT of products grouped by product line', 'tables': ['products p', 'productlines pl'], 'columns': ['pl."productLine"', 'COUNT(*) AS result'], 'filters': 'GROUP BY pl."productLine"', 'joins': ['products p JOIN productlines pl ON p."productLine" = pl."productLine"'], 'question': 'Products per product line'}
+2026-06-19 07:15:33,432 - INFO - Generated SQL: SELECT pl."productLine", COUNT(*) AS result FROM products p JOIN productlines pl ON p."productLine" = pl."productLine" GROUP BY pl."productLine";
+2026-06-19 07:15:33,432 - INFO - Attempt 1: executing -> SELECT pl."productLine", COUNT(*) AS result FROM products p JOIN productlines pl ON p."productLine" = pl."productLine" GROUP BY pl."productLine";
+2026-06-19 07:15:33,446 - INFO - Success on attempt 1 (7 rows, 13ms)
+2026-06-19 07:15:33,446 - INFO - Execution finished: success=True attempts=1 rows=7 time=13ms
+2026-06-19 07:15:33,446 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,447 - INFO - Received question: Employees per office
+2026-06-19 07:15:33,447 - INFO - Decomposition: {'intent': 'COUNT of employees grouped by office', 'tables': ['employees e', 'offices of'], 'columns': ['of."officeCode"', 'COUNT(*) AS result'], 'filters': 'GROUP BY of."officeCode"', 'joins': ['employees e JOIN offices of ON e."officeCode" = of."officeCode"'], 'question': 'Employees per office'}
+2026-06-19 07:15:33,448 - INFO - Generated SQL: SELECT of."officeCode", COUNT(*) AS result FROM employees e JOIN offices of ON e."officeCode" = of."officeCode" GROUP BY of."officeCode";
+2026-06-19 07:15:33,448 - INFO - Attempt 1: executing -> SELECT of."officeCode", COUNT(*) AS result FROM employees e JOIN offices of ON e."officeCode" = of."officeCode" GROUP BY of."officeCode";
+2026-06-19 07:15:33,461 - INFO - Success on attempt 1 (7 rows, 13ms)
+2026-06-19 07:15:33,461 - INFO - Execution finished: success=True attempts=1 rows=7 time=13ms
+2026-06-19 07:15:33,464 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,465 - INFO - Received question: Total stock per product vendor
+2026-06-19 07:15:33,465 - INFO - Decomposition: {'intent': 'SUM of stock grouped by vendor', 'tables': ['products'], 'columns': ['"productVendor"', 'SUM("quantityInStock") AS result'], 'filters': 'GROUP BY "productVendor"', 'joins': 'None', 'question': 'Total stock per product vendor'}
+2026-06-19 07:15:33,465 - INFO - Generated SQL: SELECT "productVendor", SUM("quantityInStock") AS result FROM products GROUP BY "productVendor";
+2026-06-19 07:15:33,465 - INFO - Attempt 1: executing -> SELECT "productVendor", SUM("quantityInStock") AS result FROM products GROUP BY "productVendor";
+2026-06-19 07:15:33,477 - INFO - Success on attempt 1 (13 rows, 12ms)
+2026-06-19 07:15:33,477 - INFO - Execution finished: success=True attempts=1 rows=13 time=12ms
+2026-06-19 07:15:33,478 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,480 - INFO - Received question: Average buy price per product line
+2026-06-19 07:15:33,480 - INFO - Decomposition: {'intent': 'AVG of buy price grouped by product line', 'tables': ['products p', 'productlines pl'], 'columns': ['pl."productLine"', 'AVG(p."buyPrice") AS result'], 'filters': 'GROUP BY pl."productLine"', 'joins': ['products p JOIN productlines pl ON p."productLine" = pl."productLine"'], 'question': 'Average buy price per product line'}
+2026-06-19 07:15:33,480 - INFO - Generated SQL: SELECT pl."productLine", AVG(p."buyPrice") AS result FROM products p JOIN productlines pl ON p."productLine" = pl."productLine" GROUP BY pl."productLine";
+2026-06-19 07:15:33,480 - INFO - Attempt 1: executing -> SELECT pl."productLine", AVG(p."buyPrice") AS result FROM products p JOIN productlines pl ON p."productLine" = pl."productLine" GROUP BY pl."productLine";
+2026-06-19 07:15:33,492 - INFO - Success on attempt 1 (7 rows, 12ms)
+2026-06-19 07:15:33,492 - INFO - Execution finished: success=True attempts=1 rows=7 time=12ms
+2026-06-19 07:15:33,493 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,495 - INFO - Received question: Orders per customer
+2026-06-19 07:15:33,496 - INFO - Decomposition: {'intent': 'COUNT of orders grouped by customer', 'tables': ['orders o', 'customers c'], 'columns': ['c."customerNumber"', 'COUNT(*) AS result'], 'filters': 'GROUP BY c."customerNumber"', 'joins': ['orders o JOIN customers c ON o."customerNumber" = c."customerNumber"'], 'question': 'Orders per customer'}
+2026-06-19 07:15:33,496 - INFO - Generated SQL: SELECT c."customerNumber", COUNT(*) AS result FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" GROUP BY c."customerNumber";
+2026-06-19 07:15:33,496 - INFO - Attempt 1: executing -> SELECT c."customerNumber", COUNT(*) AS result FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" GROUP BY c."customerNumber";
+2026-06-19 07:15:33,508 - INFO - Success on attempt 1 (98 rows, 12ms)
+2026-06-19 07:15:33,508 - INFO - Execution finished: success=True attempts=1 rows=98 time=12ms
+2026-06-19 07:15:33,510 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,511 - INFO - Received question: Max MSRP per product line
+2026-06-19 07:15:33,511 - INFO - Decomposition: {'intent': 'MAX of msrp grouped by product line', 'tables': ['products p', 'productlines pl'], 'columns': ['pl."productLine"', 'MAX(p."MSRP") AS result'], 'filters': 'GROUP BY pl."productLine"', 'joins': ['products p JOIN productlines pl ON p."productLine" = pl."productLine"'], 'question': 'Max MSRP per product line'}
+2026-06-19 07:15:33,512 - INFO - Generated SQL: SELECT pl."productLine", MAX(p."MSRP") AS result FROM products p JOIN productlines pl ON p."productLine" = pl."productLine" GROUP BY pl."productLine";
+2026-06-19 07:15:33,512 - INFO - Attempt 1: executing -> SELECT pl."productLine", MAX(p."MSRP") AS result FROM products p JOIN productlines pl ON p."productLine" = pl."productLine" GROUP BY pl."productLine";
+2026-06-19 07:15:33,526 - INFO - Success on attempt 1 (7 rows, 14ms)
+2026-06-19 07:15:33,526 - INFO - Execution finished: success=True attempts=1 rows=7 time=14ms
+2026-06-19 07:15:33,529 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,530 - INFO - Received question: Min buy price per vendor
+2026-06-19 07:15:33,530 - INFO - Decomposition: {'intent': 'MIN of buy price grouped by vendor', 'tables': ['products'], 'columns': ['"productVendor"', 'MIN("buyPrice") AS result'], 'filters': 'GROUP BY "productVendor"', 'joins': 'None', 'question': 'Min buy price per vendor'}
+2026-06-19 07:15:33,530 - INFO - Generated SQL: SELECT "productVendor", MIN("buyPrice") AS result FROM products GROUP BY "productVendor";
+2026-06-19 07:15:33,530 - INFO - Attempt 1: executing -> SELECT "productVendor", MIN("buyPrice") AS result FROM products GROUP BY "productVendor";
+2026-06-19 07:15:33,543 - INFO - Success on attempt 1 (13 rows, 12ms)
+2026-06-19 07:15:33,543 - INFO - Execution finished: success=True attempts=1 rows=13 time=12ms
+2026-06-19 07:15:33,543 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,544 - INFO - Received question: Total number of customers
+2026-06-19 07:15:33,545 - INFO - Decomposition: {'intent': 'COUNT of customers', 'tables': ['customers'], 'columns': ['COUNT(*) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Total number of customers'}
+2026-06-19 07:15:33,545 - INFO - Generated SQL: SELECT COUNT(*) AS result FROM customers ;
+2026-06-19 07:15:33,545 - INFO - Attempt 1: executing -> SELECT COUNT(*) AS result FROM customers ;
+2026-06-19 07:15:33,557 - INFO - Success on attempt 1 (1 rows, 12ms)
+2026-06-19 07:15:33,557 - INFO - Execution finished: success=True attempts=1 rows=1 time=12ms
+2026-06-19 07:15:33,558 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,559 - INFO - Received question: Total number of products
+2026-06-19 07:15:33,559 - INFO - Decomposition: {'intent': 'COUNT of products', 'tables': ['products'], 'columns': ['COUNT(*) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Total number of products'}
+2026-06-19 07:15:33,559 - INFO - Generated SQL: SELECT COUNT(*) AS result FROM products ;
+2026-06-19 07:15:33,559 - INFO - Attempt 1: executing -> SELECT COUNT(*) AS result FROM products ;
+2026-06-19 07:15:33,571 - INFO - Success on attempt 1 (1 rows, 11ms)
+2026-06-19 07:15:33,571 - INFO - Execution finished: success=True attempts=1 rows=1 time=11ms
+2026-06-19 07:15:33,571 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,572 - INFO - Received question: Total revenue from payments
+2026-06-19 07:15:33,572 - INFO - Decomposition: {'intent': 'SUM of revenue from payments', 'tables': ['payments'], 'columns': ['SUM(amount) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Total revenue from payments'}
+2026-06-19 07:15:33,572 - INFO - Generated SQL: SELECT SUM(amount) AS result FROM payments ;
+2026-06-19 07:15:33,573 - INFO - Attempt 1: executing -> SELECT SUM(amount) AS result FROM payments ;
+2026-06-19 07:15:33,583 - INFO - Success on attempt 1 (1 rows, 10ms)
+2026-06-19 07:15:33,584 - INFO - Execution finished: success=True attempts=1 rows=1 time=10ms
+2026-06-19 07:15:33,586 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,587 - INFO - Received question: Average product price
+2026-06-19 07:15:33,588 - INFO - Decomposition: {'intent': 'AVG of product price', 'tables': ['products'], 'columns': ['AVG("buyPrice") AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Average product price'}
+2026-06-19 07:15:33,588 - INFO - Generated SQL: SELECT AVG("buyPrice") AS result FROM products ;
+2026-06-19 07:15:33,588 - INFO - Attempt 1: executing -> SELECT AVG("buyPrice") AS result FROM products ;
+2026-06-19 07:15:33,599 - INFO - Success on attempt 1 (1 rows, 10ms)
+2026-06-19 07:15:33,600 - INFO - Execution finished: success=True attempts=1 rows=1 time=10ms
+2026-06-19 07:15:33,600 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,602 - INFO - Received question: Max payment amount
+2026-06-19 07:15:33,602 - INFO - Decomposition: {'intent': 'MAX of payment amount', 'tables': ['payments'], 'columns': ['MAX(amount) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Max payment amount'}
+2026-06-19 07:15:33,602 - INFO - Generated SQL: SELECT MAX(amount) AS result FROM payments ;
+2026-06-19 07:15:33,602 - INFO - Attempt 1: executing -> SELECT MAX(amount) AS result FROM payments ;
+2026-06-19 07:15:33,614 - INFO - Success on attempt 1 (1 rows, 12ms)
+2026-06-19 07:15:33,615 - INFO - Execution finished: success=True attempts=1 rows=1 time=12ms
+2026-06-19 07:15:33,615 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,616 - INFO - Received question: Min payment amount
+2026-06-19 07:15:33,616 - INFO - Decomposition: {'intent': 'MIN of payment amount', 'tables': ['payments'], 'columns': ['MIN(amount) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Min payment amount'}
+2026-06-19 07:15:33,616 - INFO - Generated SQL: SELECT MIN(amount) AS result FROM payments ;
+2026-06-19 07:15:33,616 - INFO - Attempt 1: executing -> SELECT MIN(amount) AS result FROM payments ;
+2026-06-19 07:15:33,629 - INFO - Success on attempt 1 (1 rows, 12ms)
+2026-06-19 07:15:33,629 - INFO - Execution finished: success=True attempts=1 rows=1 time=12ms
+2026-06-19 07:15:33,630 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,631 - INFO - Received question: Count total orders
+2026-06-19 07:15:33,631 - INFO - Decomposition: {'intent': 'COUNT of orders', 'tables': ['orders'], 'columns': ['COUNT(*) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Count total orders'}
+2026-06-19 07:15:33,631 - INFO - Generated SQL: SELECT COUNT(*) AS result FROM orders ;
+2026-06-19 07:15:33,631 - INFO - Attempt 1: executing -> SELECT COUNT(*) AS result FROM orders ;
+2026-06-19 07:15:33,643 - INFO - Success on attempt 1 (1 rows, 11ms)
+2026-06-19 07:15:33,643 - INFO - Execution finished: success=True attempts=1 rows=1 time=11ms
+2026-06-19 07:15:33,643 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,645 - INFO - Received question: Total quantity in stock
+2026-06-19 07:15:33,645 - INFO - Decomposition: {'intent': 'SUM of quantity in stock', 'tables': ['products'], 'columns': ['SUM("quantityInStock") AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Total quantity in stock'}
+2026-06-19 07:15:33,645 - INFO - Generated SQL: SELECT SUM("quantityInStock") AS result FROM products ;
+2026-06-19 07:15:33,645 - INFO - Attempt 1: executing -> SELECT SUM("quantityInStock") AS result FROM products ;
+2026-06-19 07:15:33,658 - INFO - Success on attempt 1 (1 rows, 12ms)
+2026-06-19 07:15:33,658 - INFO - Execution finished: success=True attempts=1 rows=1 time=12ms
+2026-06-19 07:15:33,659 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,660 - INFO - Received question: Average MSRP
+2026-06-19 07:15:33,660 - INFO - Decomposition: {'intent': 'AVG of msrp', 'tables': ['products'], 'columns': ['AVG("MSRP") AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Average MSRP'}
+2026-06-19 07:15:33,660 - INFO - Generated SQL: SELECT AVG("MSRP") AS result FROM products ;
+2026-06-19 07:15:33,660 - INFO - Attempt 1: executing -> SELECT AVG("MSRP") AS result FROM products ;
+2026-06-19 07:15:33,671 - INFO - Success on attempt 1 (1 rows, 11ms)
+2026-06-19 07:15:33,671 - INFO - Execution finished: success=True attempts=1 rows=1 time=11ms
+2026-06-19 07:15:33,673 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:15:33,675 - INFO - Received question: Number of employees
+2026-06-19 07:15:33,675 - INFO - Decomposition: {'intent': 'COUNT of employees', 'tables': ['employees'], 'columns': ['COUNT(*) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Number of employees'}
+2026-06-19 07:15:33,675 - INFO - Generated SQL: SELECT COUNT(*) AS result FROM employees ;
+2026-06-19 07:15:33,675 - INFO - Attempt 1: executing -> SELECT COUNT(*) AS result FROM employees ;
+2026-06-19 07:15:33,686 - INFO - Success on attempt 1 (1 rows, 10ms)
+2026-06-19 07:15:33,687 - INFO - Execution finished: success=True attempts=1 rows=1 time=10ms
+2026-06-19 07:15:33,688 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:16:10,233 - INFO - Received question: List all products
+2026-06-19 07:16:10,233 - INFO - Decomposition: {'intent': 'Retrieve all rows from products', 'tables': ['products'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'List all products'}
+2026-06-19 07:16:10,233 - INFO - Generated SQL: SELECT * FROM products ;
+2026-06-19 07:16:10,234 - INFO - Attempt 1: executing -> SELECT * FROM products ;
+2026-06-19 07:16:10,248 - INFO - Success on attempt 1 (110 rows, 14ms)
+2026-06-19 07:16:10,250 - INFO - Execution finished: success=True attempts=1 rows=110 time=14ms
+2026-06-19 07:16:10,251 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:16:10,253 - INFO - Received question: Get orders with customer names
+2026-06-19 07:16:10,253 - INFO - Decomposition: {'intent': 'Retrieve orders together with related customers information', 'tables': ['orders o', 'customers c'], 'columns': ['o."orderNumber"', 'c."customerName"'], 'filters': 'None', 'joins': ['orders o JOIN customers c ON o."customerNumber" = c."customerNumber"'], 'question': 'Get orders with customer names'}
+2026-06-19 07:16:10,253 - INFO - Generated SQL: SELECT o."orderNumber", c."customerName" FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" ;
+2026-06-19 07:16:10,253 - INFO - Attempt 1: executing -> SELECT o."orderNumber", c."customerName" FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" ;
+2026-06-19 07:16:10,267 - INFO - Success on attempt 1 (326 rows, 14ms)
+2026-06-19 07:16:10,267 - INFO - Execution finished: success=True attempts=1 rows=326 time=14ms
+2026-06-19 07:16:10,268 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:16:10,269 - INFO - Received question: Count customers per country
+2026-06-19 07:16:10,269 - INFO - Decomposition: {'intent': 'COUNT of customers grouped by country', 'tables': ['customers'], 'columns': ['country', 'COUNT(*) AS result'], 'filters': 'GROUP BY country', 'joins': 'None', 'question': 'Count customers per country'}
+2026-06-19 07:16:10,269 - INFO - Generated SQL: SELECT country, COUNT(*) AS result FROM customers GROUP BY country;
+2026-06-19 07:16:10,269 - INFO - Attempt 1: executing -> SELECT country, COUNT(*) AS result FROM customers GROUP BY country;
+2026-06-19 07:16:10,280 - INFO - Success on attempt 1 (28 rows, 10ms)
+2026-06-19 07:16:10,280 - INFO - Execution finished: success=True attempts=1 rows=28 time=10ms
+2026-06-19 07:16:10,282 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:16:10,283 - INFO - Received question: Total revenue from payments
+2026-06-19 07:16:10,283 - INFO - Decomposition: {'intent': 'SUM of revenue from payments', 'tables': ['payments'], 'columns': ['SUM(amount) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Total revenue from payments'}
+2026-06-19 07:16:10,283 - INFO - Generated SQL: SELECT SUM(amount) AS result FROM payments ;
+2026-06-19 07:16:10,283 - INFO - Attempt 1: executing -> SELECT SUM(amount) AS result FROM payments ;
+2026-06-19 07:16:10,294 - INFO - Success on attempt 1 (1 rows, 10ms)
+2026-06-19 07:16:10,294 - INFO - Execution finished: success=True attempts=1 rows=1 time=10ms
+2026-06-19 07:16:10,296 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:16:10,297 - INFO - Received question: Get employees and their manager
+2026-06-19 07:16:10,297 - INFO - Decomposition: {'intent': 'Retrieve employees together with their manager (self join)', 'tables': ['employees e', 'employees m'], 'columns': ['e."firstName"', 'e."lastName"', 'm."firstName" AS "managerFirstName"', 'm."lastName" AS "managerLastName"'], 'filters': 'None', 'joins': ['employees e JOIN employees m ON e."reportsTo" = m."employeeNumber"'], 'question': 'Get employees and their manager'}
+2026-06-19 07:16:10,297 - INFO - Generated SQL: SELECT e."firstName", e."lastName", m."firstName" AS "managerFirstName", m."lastName" AS "managerLastName" FROM employees e JOIN employees m ON e."reportsTo" = m."employeeNumber" ;
+2026-06-19 07:16:10,297 - INFO - Attempt 1: executing -> SELECT e."firstName", e."lastName", m."firstName" AS "managerFirstName", m."lastName" AS "managerLastName" FROM employees e JOIN employees m ON e."reportsTo" = m."employeeNumber" ;
+2026-06-19 07:16:10,308 - INFO - Success on attempt 1 (22 rows, 10ms)
+2026-06-19 07:16:10,309 - INFO - Execution finished: success=True attempts=1 rows=22 time=10ms
+2026-06-19 07:16:10,310 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 07:16:10,311 - INFO - Received question: Show all order statuses
+2026-06-19 07:16:10,311 - INFO - Decomposition: {'intent': 'Retrieve a single column from orders', 'tables': ['orders'], 'columns': ['status'], 'filters': 'None', 'joins': 'None', 'question': 'Show all order statuses'}
+2026-06-19 07:16:10,311 - INFO - Generated SQL: SELECT status FROM orders ;
+2026-06-19 07:16:10,311 - INFO - Attempt 1: executing -> SELECT status FROM orders ;
+2026-06-19 07:16:10,323 - INFO - Success on attempt 1 (326 rows, 12ms)
+2026-06-19 07:16:10,323 - INFO - Execution finished: success=True attempts=1 rows=326 time=12ms
+2026-06-19 07:16:10,324 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 13:53:38,926 - INFO - Received question: List all products
+2026-06-19 13:53:38,926 - INFO - Decomposition: {'intent': 'Retrieve all rows from products', 'tables': ['products'], 'columns': ['*'], 'filters': 'None', 'joins': 'None', 'question': 'List all products'}
+2026-06-19 13:53:38,926 - INFO - Generated SQL: SELECT * FROM products ;
+2026-06-19 13:53:38,926 - INFO - Attempt 1: executing -> SELECT * FROM products ;
+2026-06-19 13:53:38,975 - INFO - Success on attempt 1 (110 rows, 48ms)
+2026-06-19 13:53:38,976 - INFO - Execution finished: success=True attempts=1 rows=110 time=48ms
+2026-06-19 13:53:38,978 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 13:53:38,983 - INFO - Received question: Get orders with customer names
+2026-06-19 13:53:38,983 - INFO - Decomposition: {'intent': 'Retrieve orders together with related customers information', 'tables': ['orders o', 'customers c'], 'columns': ['o."orderNumber"', 'c."customerName"'], 'filters': 'None', 'joins': ['orders o JOIN customers c ON o."customerNumber" = c."customerNumber"'], 'question': 'Get orders with customer names'}
+2026-06-19 13:53:38,983 - INFO - Generated SQL: SELECT o."orderNumber", c."customerName" FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" ;
+2026-06-19 13:53:38,983 - INFO - Attempt 1: executing -> SELECT o."orderNumber", c."customerName" FROM orders o JOIN customers c ON o."customerNumber" = c."customerNumber" ;
+2026-06-19 13:53:39,026 - INFO - Success on attempt 1 (326 rows, 42ms)
+2026-06-19 13:53:39,026 - INFO - Execution finished: success=True attempts=1 rows=326 time=42ms
+2026-06-19 13:53:39,026 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 13:53:39,026 - INFO - Received question: Count customers per country
+2026-06-19 13:53:39,026 - INFO - Decomposition: {'intent': 'COUNT of customers grouped by country', 'tables': ['customers'], 'columns': ['country', 'COUNT(*) AS result'], 'filters': 'GROUP BY country', 'joins': 'None', 'question': 'Count customers per country'}
+2026-06-19 13:53:39,026 - INFO - Generated SQL: SELECT country, COUNT(*) AS result FROM customers GROUP BY country;
+2026-06-19 13:53:39,026 - INFO - Attempt 1: executing -> SELECT country, COUNT(*) AS result FROM customers GROUP BY country;
+2026-06-19 13:53:39,070 - INFO - Success on attempt 1 (28 rows, 43ms)
+2026-06-19 13:53:39,070 - INFO - Execution finished: success=True attempts=1 rows=28 time=43ms
+2026-06-19 13:53:39,074 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 13:53:39,077 - INFO - Received question: Total revenue from payments
+2026-06-19 13:53:39,077 - INFO - Decomposition: {'intent': 'SUM of revenue from payments', 'tables': ['payments'], 'columns': ['SUM(amount) AS result'], 'filters': 'None', 'joins': 'None', 'question': 'Total revenue from payments'}
+2026-06-19 13:53:39,077 - INFO - Generated SQL: SELECT SUM(amount) AS result FROM payments ;
+2026-06-19 13:53:39,077 - INFO - Attempt 1: executing -> SELECT SUM(amount) AS result FROM payments ;
+2026-06-19 13:53:39,123 - INFO - Success on attempt 1 (1 rows, 45ms)
+2026-06-19 13:53:39,123 - INFO - Execution finished: success=True attempts=1 rows=1 time=45ms
+2026-06-19 13:53:39,127 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 13:53:39,127 - INFO - Received question: Get employees and their manager
+2026-06-19 13:53:39,127 - INFO - Decomposition: {'intent': 'Retrieve employees together with their manager (self join)', 'tables': ['employees e', 'employees m'], 'columns': ['e."firstName"', 'e."lastName"', 'm."firstName" AS "managerFirstName"', 'm."lastName" AS "managerLastName"'], 'filters': 'None', 'joins': ['employees e JOIN employees m ON e."reportsTo" = m."employeeNumber"'], 'question': 'Get employees and their manager'}
+2026-06-19 13:53:39,127 - INFO - Generated SQL: SELECT e."firstName", e."lastName", m."firstName" AS "managerFirstName", m."lastName" AS "managerLastName" FROM employees e JOIN employees m ON e."reportsTo" = m."employeeNumber" ;
+2026-06-19 13:53:39,127 - INFO - Attempt 1: executing -> SELECT e."firstName", e."lastName", m."firstName" AS "managerFirstName", m."lastName" AS "managerLastName" FROM employees e JOIN employees m ON e."reportsTo" = m."employeeNumber" ;
+2026-06-19 13:53:39,156 - INFO - Success on attempt 1 (22 rows, 28ms)
+2026-06-19 13:53:39,158 - INFO - Execution finished: success=True attempts=1 rows=22 time=28ms
+2026-06-19 13:53:39,160 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"
+2026-06-19 13:53:39,165 - INFO - Received question: Show all order statuses
+2026-06-19 13:53:39,165 - INFO - Decomposition: {'intent': 'Retrieve a single column from orders', 'tables': ['orders'], 'columns': ['status'], 'filters': 'None', 'joins': 'None', 'question': 'Show all order statuses'}
+2026-06-19 13:53:39,165 - INFO - Generated SQL: SELECT status FROM orders ;
+2026-06-19 13:53:39,165 - INFO - Attempt 1: executing -> SELECT status FROM orders ;
+2026-06-19 13:53:39,206 - INFO - Success on attempt 1 (326 rows, 40ms)
+2026-06-19 13:53:39,206 - INFO - Execution finished: success=True attempts=1 rows=326 time=40ms
+2026-06-19 13:53:39,213 - INFO - HTTP Request: POST http://testserver/agent/sql "HTTP/1.1 200 OK"

@@ -1,0 +1,302 @@
+[
+  {
+    "question": "List all products",
+    "sql": "SELECT * FROM products ;",
+    "status": "success",
+    "summary": "Found 110 rows. Showing the first 5: [{'productCode': 'S10_1678', 'productName': '1969 Harley Davidson Ultimate Chopper', 'productLine': 'Motorcycles'"
+  },
+  {
+    "question": "Get all customers",
+    "sql": "SELECT * FROM customers ;",
+    "status": "success",
+    "summary": "Found 122 rows. Showing the first 5: [{'customerNumber': 103, 'customerName': 'Atelier graphique', 'contactLastName': 'Schmitt', 'contactFirstName': '"
+  },
+  {
+    "question": "Show all orders",
+    "sql": "SELECT * FROM orders ;",
+    "status": "success",
+    "summary": "Found 326 rows. Showing the first 5: [{'orderNumber': 10100, 'orderDate': datetime.date(2003, 1, 6), 'requiredDate': datetime.date(2003, 1, 13), 'ship"
+  },
+  {
+    "question": "List all employees",
+    "sql": "SELECT * FROM employees ;",
+    "status": "success",
+    "summary": "Found 23 rows. Showing the first 5: [{'employeeNumber': 1002, 'lastName': 'Murphy', 'firstName': 'Diane', 'extension': 'x5800', 'email': 'dmurphy@clas"
+  },
+  {
+    "question": "Get all offices",
+    "sql": "SELECT * FROM offices ;",
+    "status": "success",
+    "summary": "Found 7 rows. Showing the first 5: [{'officeCode': '1', 'city': 'San Francisco', 'phone': '+1 650 219 4782', 'addressLine1': '100 Market Street', 'add"
+  },
+  {
+    "question": "Show all product lines",
+    "sql": "SELECT * FROM productlines ;",
+    "status": "success",
+    "summary": "Found 7 rows. Showing the first 5: [{'productLine': 'Classic Cars', 'textDescription': 'Attention car enthusiasts: Make your wildest car ownership dre"
+  },
+  {
+    "question": "List all payments",
+    "sql": "SELECT * FROM payments ;",
+    "status": "success",
+    "summary": "Found 273 rows. Showing the first 5: [{'customerNumber': 103, 'checkNumber': 'HQ336336', 'paymentDate': datetime.date(2004, 10, 19), 'amount': Decimal"
+  },
+  {
+    "question": "Get product names and prices",
+    "sql": "SELECT \"productName\", \"buyPrice\" FROM products ;",
+    "status": "success",
+    "summary": "Found 110 rows. Showing the first 5: [{'productName': '1969 Harley Davidson Ultimate Chopper', 'buyPrice': Decimal('48.81')}, {'productName': '1952 Al"
+  },
+  {
+    "question": "Get customer names and cities",
+    "sql": "SELECT \"customerName\", city FROM customers ;",
+    "status": "success",
+    "summary": "Found 122 rows. Showing the first 5: [{'customerName': 'Atelier graphique', 'city': 'Nantes'}, {'customerName': 'Signal Gift Stores', 'city': 'Las Veg"
+  },
+  {
+    "question": "List employee first and last names",
+    "sql": "SELECT \"firstName\", \"lastName\" FROM employees ;",
+    "status": "success",
+    "summary": "Found 23 rows. Showing the first 5: [{'firstName': 'Diane', 'lastName': 'Murphy'}, {'firstName': 'Mary', 'lastName': 'Patterson'}, {'firstName': 'Jeff"
+  },
+  {
+    "question": "Get all order dates",
+    "sql": "SELECT \"orderDate\" FROM orders ;",
+    "status": "success",
+    "summary": "Found 326 rows. Showing the first 5: [{'orderDate': datetime.date(2003, 1, 6)}, {'orderDate': datetime.date(2003, 1, 9)}, {'orderDate': datetime.date("
+  },
+  {
+    "question": "Show product vendor list",
+    "sql": "SELECT \"productVendor\" FROM products ;",
+    "status": "success",
+    "summary": "Found 110 rows. Showing the first 5: [{'productVendor': 'Min Lin Diecast'}, {'productVendor': 'Classic Metal Creations'}, {'productVendor': 'Highway 6"
+  },
+  {
+    "question": "Get all product codes",
+    "sql": "SELECT \"productCode\" FROM products ;",
+    "status": "success",
+    "summary": "Found 110 rows. Showing the first 5: [{'productCode': 'S10_1678'}, {'productCode': 'S10_1949'}, {'productCode': 'S10_2016'}, {'productCode': 'S10_4698"
+  },
+  {
+    "question": "List all countries from offices",
+    "sql": "SELECT country FROM offices ;",
+    "status": "success",
+    "summary": "Found 7 rows. Showing the first 5: [{'country': 'USA'}, {'country': 'USA'}, {'country': 'USA'}, {'country': 'France'}, {'country': 'Japan'}]"
+  },
+  {
+    "question": "Show all order statuses",
+    "sql": "SELECT status FROM orders ;",
+    "status": "success",
+    "summary": "Found 326 rows. Showing the first 5: [{'status': 'Shipped'}, {'status': 'Shipped'}, {'status': 'Shipped'}, {'status': 'Shipped'}, {'status': 'Shipped'"
+  },
+  {
+    "question": "Get all payment amounts",
+    "sql": "SELECT amount FROM payments ;",
+    "status": "success",
+    "summary": "Found 273 rows. Showing the first 5: [{'amount': Decimal('6066.78')}, {'amount': Decimal('14571.44')}, {'amount': Decimal('1676.14')}, {'amount': Deci"
+  },
+  {
+    "question": "List all job titles",
+    "sql": "SELECT \"jobTitle\" FROM employees ;",
+    "status": "success",
+    "summary": "Found 23 rows. Showing the first 5: [{'jobTitle': 'President'}, {'jobTitle': 'VP Sales'}, {'jobTitle': 'VP Marketing'}, {'jobTitle': 'Sales Manager (A"
+  },
+  {
+    "question": "Get customer phone numbers",
+    "sql": "SELECT phone FROM customers ;",
+    "status": "success",
+    "summary": "Found 122 rows. Showing the first 5: [{'phone': '40.32.2555'}, {'phone': '7025551838'}, {'phone': '03 9520 4555'}, {'phone': '40.67.8555'}, {'phone': "
+  },
+  {
+    "question": "Show product MSRP values",
+    "sql": "SELECT \"MSRP\" FROM products ;",
+    "status": "success",
+    "summary": "Found 110 rows. Showing the first 5: [{'MSRP': Decimal('95.70')}, {'MSRP': Decimal('214.30')}, {'MSRP': Decimal('118.94')}, {'MSRP': Decimal('193.66')"
+  },
+  {
+    "question": "List order numbers",
+    "sql": "SELECT \"orderNumber\" FROM orders ;",
+    "status": "success",
+    "summary": "Found 326 rows. Showing the first 5: [{'orderNumber': 10100}, {'orderNumber': 10101}, {'orderNumber': 10102}, {'orderNumber': 10103}, {'orderNumber': "
+  },
+  {
+    "question": "Get orders with customer names",
+    "sql": "SELECT o.\"orderNumber\", c.\"customerName\" FROM orders o JOIN customers c ON o.\"customerNumber\" = c.\"customerNumber\" ;",
+    "status": "success",
+    "summary": "Found 326 rows. Showing the first 5: [{'orderNumber': 10100, 'customerName': 'Online Diecast Creations Co.'}, {'orderNumber': 10101, 'customerName': '"
+  },
+  {
+    "question": "Get employees with office city",
+    "sql": "SELECT e.\"firstName\", e.\"lastName\", of.\"city\" FROM employees e JOIN offices of ON e.\"officeCode\" = of.\"officeCode\" ;",
+    "status": "success",
+    "summary": "Found 23 rows. Showing the first 5: [{'firstName': 'Diane', 'lastName': 'Murphy', 'city': 'San Francisco'}, {'firstName': 'Mary', 'lastName': 'Patters"
+  },
+  {
+    "question": "Get payments with customer names",
+    "sql": "SELECT pm.\"checkNumber\", pm.amount, c.\"customerName\" FROM payments pm JOIN customers c ON pm.\"customerNumber\" = c.\"customerNumber\" ;",
+    "status": "success",
+    "summary": "Found 273 rows. Showing the first 5: [{'checkNumber': 'HQ336336', 'amount': Decimal('6066.78'), 'customerName': 'Atelier graphique'}, {'checkNumber': "
+  },
+  {
+    "question": "Get order details with product names",
+    "sql": "SELECT od.\"orderNumber\", p.\"productName\", od.\"quantityOrdered\" FROM orderdetails od JOIN products p ON od.\"productCode\" = p.\"productCode\" ;",
+    "status": "success",
+    "summary": "Found 2996 rows. Showing the first 5: [{'orderNumber': 10100, 'productName': '1917 Grand Touring Sedan', 'quantityOrdered': 30}, {'orderNumber': 10100"
+  },
+  {
+    "question": "Get products with product line description",
+    "sql": "SELECT p.\"productName\", pl.\"textDescription\" FROM products p JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\" ;",
+    "status": "success",
+    "summary": "Found 110 rows. Showing the first 5: [{'productName': '1969 Harley Davidson Ultimate Chopper', 'textDescription': 'Our motorcycles are state of the ar"
+  },
+  {
+    "question": "Get customers with sales rep names",
+    "sql": "SELECT c.\"customerName\", e.\"firstName\", e.\"lastName\" FROM customers c JOIN employees e ON c.\"salesRepEmployeeNumber\" = e.\"employeeNumber\" ;",
+    "status": "success",
+    "summary": "Found 100 rows. Showing the first 5: [{'customerName': 'Atelier graphique', 'firstName': 'Gerard', 'lastName': 'Hernandez'}, {'customerName': 'Signal "
+  },
+  {
+    "question": "Get orders with customer city",
+    "sql": "SELECT o.\"orderNumber\", c.city FROM orders o JOIN customers c ON o.\"customerNumber\" = c.\"customerNumber\" ;",
+    "status": "success",
+    "summary": "Found 326 rows. Showing the first 5: [{'orderNumber': 10100, 'city': 'Nashua'}, {'orderNumber': 10101, 'city': 'Frankfurt'}, {'orderNumber': 10102, 'c"
+  },
+  {
+    "question": "Get employees and their manager",
+    "sql": "SELECT e.\"firstName\", e.\"lastName\", m.\"firstName\" AS \"managerFirstName\", m.\"lastName\" AS \"managerLastName\" FROM employees e JOIN employees m ON e.\"reportsTo\" = m.\"employeeNumber\" ;",
+    "status": "success",
+    "summary": "Found 22 rows. Showing the first 5: [{'firstName': 'Mary', 'lastName': 'Patterson', 'managerFirstName': 'Diane', 'managerLastName': 'Murphy'}, {'first"
+  },
+  {
+    "question": "Get orderdetails with product vendor",
+    "sql": "SELECT od.\"orderNumber\", p.\"productVendor\" FROM orderdetails od JOIN products p ON od.\"productCode\" = p.\"productCode\" ;",
+    "status": "success",
+    "summary": "Found 2996 rows. Showing the first 5: [{'orderNumber': 10100, 'productVendor': 'Welly Diecast Productions'}, {'orderNumber': 10100, 'productVendor': '"
+  },
+  {
+    "question": "Get payments with customer country",
+    "sql": "SELECT pm.\"checkNumber\", c.country FROM payments pm JOIN customers c ON pm.\"customerNumber\" = c.\"customerNumber\" ;",
+    "status": "success",
+    "summary": "Found 273 rows. Showing the first 5: [{'checkNumber': 'HQ336336', 'country': 'France'}, {'checkNumber': 'JM555205', 'country': 'France'}, {'checkNumbe"
+  },
+  {
+    "question": "Count customers per country",
+    "sql": "SELECT country, COUNT(*) AS result FROM customers GROUP BY country;",
+    "status": "success",
+    "summary": "Found 28 rows. Showing the first 5: [{'country': 'Switzerland', 'result': 3}, {'country': 'New Zealand', 'result': 4}, {'country': 'Italy', 'result': "
+  },
+  {
+    "question": "Total payments per customer",
+    "sql": "SELECT c.\"customerNumber\", SUM(pm.amount) AS result FROM payments pm JOIN customers c ON pm.\"customerNumber\" = c.\"customerNumber\" GROUP BY c.\"customerNumber\";",
+    "status": "success",
+    "summary": "Found 98 rows. Showing the first 5: [{'customerNumber': 455, 'result': Decimal('70378.65')}, {'customerNumber': 448, 'result': Decimal('76776.44')}, {"
+  },
+  {
+    "question": "Number of orders per status",
+    "sql": "SELECT status, COUNT(*) AS result FROM orders GROUP BY status;",
+    "status": "success",
+    "summary": "Found 6 rows. Showing the first 5: [{'status': 'Shipped', 'result': 303}, {'status': 'In Process', 'result': 6}, {'status': 'Disputed', 'result': 3}, "
+  },
+  {
+    "question": "Products per product line",
+    "sql": "SELECT pl.\"productLine\", COUNT(*) AS result FROM products p JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\" GROUP BY pl.\"productLine\";",
+    "status": "success",
+    "summary": "Found 7 rows. Showing the first 5: [{'productLine': 'Classic Cars', 'result': 38}, {'productLine': 'Trains', 'result': 3}, {'productLine': 'Motorcycle"
+  },
+  {
+    "question": "Employees per office",
+    "sql": "SELECT of.\"officeCode\", COUNT(*) AS result FROM employees e JOIN offices of ON e.\"officeCode\" = of.\"officeCode\" GROUP BY of.\"officeCode\";",
+    "status": "success",
+    "summary": "Found 7 rows. Showing the first 5: [{'officeCode': '6', 'result': 4}, {'officeCode': '2', 'result': 2}, {'officeCode': '4', 'result': 5}, {'officeCode"
+  },
+  {
+    "question": "Total stock per product vendor",
+    "sql": "SELECT \"productVendor\", SUM(\"quantityInStock\") AS result FROM products GROUP BY \"productVendor\";",
+    "status": "success",
+    "summary": "Found 13 rows. Showing the first 5: [{'productVendor': 'Welly Diecast Productions', 'result': 45095}, {'productVendor': 'Motor City Art Classics', 're"
+  },
+  {
+    "question": "Average buy price per product line",
+    "sql": "SELECT pl.\"productLine\", AVG(p.\"buyPrice\") AS result FROM products p JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\" GROUP BY pl.\"productLine\";",
+    "status": "success",
+    "summary": "Found 7 rows. Showing the first 5: [{'productLine': 'Classic Cars', 'result': Decimal('64.4463157894736842')}, {'productLine': 'Trains', 'result': Dec"
+  },
+  {
+    "question": "Orders per customer",
+    "sql": "SELECT c.\"customerNumber\", COUNT(*) AS result FROM orders o JOIN customers c ON o.\"customerNumber\" = c.\"customerNumber\" GROUP BY c.\"customerNumber\";",
+    "status": "success",
+    "summary": "Found 98 rows. Showing the first 5: [{'customerNumber': 455, 'result': 2}, {'customerNumber': 448, 'result': 3}, {'customerNumber': 146, 'result': 3},"
+  },
+  {
+    "question": "Max MSRP per product line",
+    "sql": "SELECT pl.\"productLine\", MAX(p.\"MSRP\") AS result FROM products p JOIN productlines pl ON p.\"productLine\" = pl.\"productLine\" GROUP BY pl.\"productLine\";",
+    "status": "success",
+    "summary": "Found 7 rows. Showing the first 5: [{'productLine': 'Classic Cars', 'result': Decimal('214.30')}, {'productLine': 'Trains', 'result': Decimal('100.84'"
+  },
+  {
+    "question": "Min buy price per vendor",
+    "sql": "SELECT \"productVendor\", MIN(\"buyPrice\") AS result FROM products GROUP BY \"productVendor\";",
+    "status": "success",
+    "summary": "Found 13 rows. Showing the first 5: [{'productVendor': 'Welly Diecast Productions', 'result': Decimal('24.23')}, {'productVendor': 'Motor City Art Cla"
+  },
+  {
+    "question": "Total number of customers",
+    "sql": "SELECT COUNT(*) AS result FROM customers ;",
+    "status": "success",
+    "summary": "There are 122 matching records."
+  },
+  {
+    "question": "Total number of products",
+    "sql": "SELECT COUNT(*) AS result FROM products ;",
+    "status": "success",
+    "summary": "There are 110 matching records."
+  },
+  {
+    "question": "Total revenue from payments",
+    "sql": "SELECT SUM(amount) AS result FROM payments ;",
+    "status": "success",
+    "summary": "The result is 8853839.23."
+  },
+  {
+    "question": "Average product price",
+    "sql": "SELECT AVG(\"buyPrice\") AS result FROM products ;",
+    "status": "success",
+    "summary": "The result is 54.3951818181818182."
+  },
+  {
+    "question": "Max payment amount",
+    "sql": "SELECT MAX(amount) AS result FROM payments ;",
+    "status": "success",
+    "summary": "The result is 120166.58."
+  },
+  {
+    "question": "Min payment amount",
+    "sql": "SELECT MIN(amount) AS result FROM payments ;",
+    "status": "success",
+    "summary": "The result is 615.45."
+  },
+  {
+    "question": "Count total orders",
+    "sql": "SELECT COUNT(*) AS result FROM orders ;",
+    "status": "success",
+    "summary": "There are 326 matching records."
+  },
+  {
+    "question": "Total quantity in stock",
+    "sql": "SELECT SUM(\"quantityInStock\") AS result FROM products ;",
+    "status": "success",
+    "summary": "The result is 555131."
+  },
+  {
+    "question": "Average MSRP",
+    "sql": "SELECT AVG(\"MSRP\") AS result FROM products ;",
+    "status": "success",
+    "summary": "The result is 100.4387272727272727."
+  },
+  {
+    "question": "Number of employees",
+    "sql": "SELECT COUNT(*) AS result FROM employees ;",
+    "status": "success",
+    "summary": "There are 23 matching records."
+  }
+]
