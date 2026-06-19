@@ -170,9 +170,9 @@ resources (`orderdetails`, `payments`) take both key parts in the path.
 
 ### Error handling
 
-- **404** — record not found on a GET/PUT/DELETE by ID.
-- **422** — a foreign key on create/update points at a row that doesn't exist (e.g. a `productLine` that isn't in `productlines`), or a Pydantic validation rule fails (e.g. `MSRP < buyPrice`, `quantityOrdered <= 0`).
-- **409** — delete blocked because another table still references the row (e.g. deleting an `office` that still has `employees`).
+- **404** : record not found on a GET/PUT/DELETE by ID.
+- **422** : a foreign key on create/update points at a row that doesn't exist (e.g. a `productLine` that isn't in `productlines`), or a Pydantic validation rule fails (e.g. `MSRP < buyPrice`, `quantityOrdered <= 0`).
+- **409** : delete blocked because another table still references the row (e.g. deleting an `office` that still has `employees`).
 - List-by-relationship endpoints (`/orders/customer/{id}`, `/payments/customer/{id}`, `/orderdetails/order/{id}`) never 404 on an empty result — they return `[]`, since "no orders yet" isn't an error.
 
 ## Logging
