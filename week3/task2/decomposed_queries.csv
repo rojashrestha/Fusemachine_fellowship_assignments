@@ -1,0 +1,51 @@
+question,intent,tables,columns,filters,joins
+List all products,Retrieve all rows from products,products,*,None,None
+Get all customers,Retrieve all rows from customers,customers,*,None,None
+Show all orders,Retrieve all rows from orders,orders,*,None,None
+List all employees,Retrieve all rows from employees,employees,*,None,None
+Get all offices,Retrieve all rows from offices,offices,*,None,None
+Show all product lines,Retrieve all rows from productlines,productlines,*,None,None
+List all payments,Retrieve all rows from payments,payments,*,None,None
+Get product names and prices,Retrieve specific columns from products,products,"""productName"", ""buyPrice""",None,None
+Get customer names and cities,Retrieve specific columns from customers,customers,"""customerName"", city",None,None
+List employee first and last names,Retrieve specific columns from employees,employees,"""firstName"", ""lastName""",None,None
+Get all order dates,Retrieve a single column from orders,orders,"""orderDate""",None,None
+Show product vendor list,Retrieve a single column from products,products,"""productVendor""",None,None
+Get all product codes,Retrieve a single column from products,products,"""productCode""",None,None
+List all countries from offices,Retrieve a single column from offices,offices,country,None,None
+Show all order statuses,Retrieve a single column from orders,orders,status,None,None
+Get all payment amounts,Retrieve a single column from payments,payments,amount,None,None
+List all job titles,Retrieve a single column from employees,employees,"""jobTitle""",None,None
+Get customer phone numbers,Retrieve a single column from customers,customers,phone,None,None
+Show product MSRP values,Retrieve a single column from products,products,"""MSRP""",None,None
+List order numbers,Retrieve a single column from orders,orders,"""orderNumber""",None,None
+Get orders with customer names,Retrieve orders together with related customers information,"orders o, customers c","o.""orderNumber"", c.""customerName""",None,"orders o JOIN customers c ON o.""customerNumber"" = c.""customerNumber"""
+Get employees with office city,Retrieve employees together with related offices information,"employees e, offices of","e.""firstName"", e.""lastName"", of.""city""",None,"employees e JOIN offices of ON e.""officeCode"" = of.""officeCode"""
+Get payments with customer names,Retrieve payments together with related customers information,"payments pm, customers c","pm.""checkNumber"", pm.amount, c.""customerName""",None,"payments pm JOIN customers c ON pm.""customerNumber"" = c.""customerNumber"""
+Get order details with product names,Retrieve orderdetails together with related products information,"orderdetails od, products p","od.""orderNumber"", p.""productName"", od.""quantityOrdered""",None,"orderdetails od JOIN products p ON od.""productCode"" = p.""productCode"""
+Get products with product line description,Retrieve products together with related productlines information,"products p, productlines pl","p.""productName"", pl.""textDescription""",None,"products p JOIN productlines pl ON p.""productLine"" = pl.""productLine"""
+Get customers with sales rep names,Retrieve customers together with related employees information,"customers c, employees e","c.""customerName"", e.""firstName"", e.""lastName""",None,"customers c JOIN employees e ON c.""salesRepEmployeeNumber"" = e.""employeeNumber"""
+Get orders with customer city,Retrieve orders together with related customers information,"orders o, customers c","o.""orderNumber"", c.city",None,"orders o JOIN customers c ON o.""customerNumber"" = c.""customerNumber"""
+Get employees and their manager,Retrieve employees together with their manager (self join),"employees e, employees m","e.""firstName"", e.""lastName"", m.""firstName"" AS ""managerFirstName"", m.""lastName"" AS ""managerLastName""",None,"employees e JOIN employees m ON e.""reportsTo"" = m.""employeeNumber"""
+Get orderdetails with product vendor,Retrieve orderdetails together with related products information,"orderdetails od, products p","od.""orderNumber"", p.""productVendor""",None,"orderdetails od JOIN products p ON od.""productCode"" = p.""productCode"""
+Get payments with customer country,Retrieve payments together with related customers information,"payments pm, customers c","pm.""checkNumber"", c.country",None,"payments pm JOIN customers c ON pm.""customerNumber"" = c.""customerNumber"""
+Count customers per country,COUNT of customers grouped by country,customers,"country, COUNT(*) AS result",GROUP BY country,None
+Total payments per customer,SUM of payments grouped by customer,"payments pm, customers c","c.""customerNumber"", SUM(pm.amount) AS result","GROUP BY c.""customerNumber""","payments pm JOIN customers c ON pm.""customerNumber"" = c.""customerNumber"""
+Number of orders per status,COUNT of orders grouped by status,orders,"status, COUNT(*) AS result",GROUP BY status,None
+Products per product line,COUNT of products grouped by product line,"products p, productlines pl","pl.""productLine"", COUNT(*) AS result","GROUP BY pl.""productLine""","products p JOIN productlines pl ON p.""productLine"" = pl.""productLine"""
+Employees per office,COUNT of employees grouped by office,"employees e, offices of","of.""officeCode"", COUNT(*) AS result","GROUP BY of.""officeCode""","employees e JOIN offices of ON e.""officeCode"" = of.""officeCode"""
+Total stock per product vendor,SUM of stock grouped by vendor,products,"""productVendor"", SUM(""quantityInStock"") AS result","GROUP BY ""productVendor""",None
+Average buy price per product line,AVG of buy price grouped by product line,"products p, productlines pl","pl.""productLine"", AVG(p.""buyPrice"") AS result","GROUP BY pl.""productLine""","products p JOIN productlines pl ON p.""productLine"" = pl.""productLine"""
+Orders per customer,COUNT of orders grouped by customer,"orders o, customers c","c.""customerNumber"", COUNT(*) AS result","GROUP BY c.""customerNumber""","orders o JOIN customers c ON o.""customerNumber"" = c.""customerNumber"""
+Max MSRP per product line,MAX of msrp grouped by product line,"products p, productlines pl","pl.""productLine"", MAX(p.""MSRP"") AS result","GROUP BY pl.""productLine""","products p JOIN productlines pl ON p.""productLine"" = pl.""productLine"""
+Min buy price per vendor,MIN of buy price grouped by vendor,products,"""productVendor"", MIN(""buyPrice"") AS result","GROUP BY ""productVendor""",None
+Total number of customers,COUNT of customers,customers,COUNT(*) AS result,None,None
+Total number of products,COUNT of products,products,COUNT(*) AS result,None,None
+Total revenue from payments,SUM of revenue from payments,payments,SUM(amount) AS result,None,None
+Average product price,AVG of product price,products,"AVG(""buyPrice"") AS result",None,None
+Max payment amount,MAX of payment amount,payments,MAX(amount) AS result,None,None
+Min payment amount,MIN of payment amount,payments,MIN(amount) AS result,None,None
+Count total orders,COUNT of orders,orders,COUNT(*) AS result,None,None
+Total quantity in stock,SUM of quantity in stock,products,"SUM(""quantityInStock"") AS result",None,None
+Average MSRP,AVG of msrp,products,"AVG(""MSRP"") AS result",None,None
+Number of employees,COUNT of employees,employees,COUNT(*) AS result,None,None

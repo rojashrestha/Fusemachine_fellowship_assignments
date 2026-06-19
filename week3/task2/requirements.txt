@@ -1,0 +1,2 @@
+# Task 2 has no external dependencies -- the decomposer is pure Python
+# (re module only, part of the standard library).
