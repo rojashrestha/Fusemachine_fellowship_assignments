@@ -3,10 +3,10 @@
 A full REST API over the sample sales database, built in layers across
 four checkpoints:
 
-- **Task 1** — PostgreSQL database in Docker, seeded automatically from `seed.sql`.
-- **Task 2** — Customer API with a 4-layer architecture (`app/database.py`, `app/schemas/`, `app/crud/`, `app/routers/`) and centralized logging.
-- **Task 3** — A Factor VIII concurrency dashboard: 8 individual count endpoints plus an aggregated `/overall_counts` that runs them all at once with `asyncio.gather()`.
-- **Part 4** — The same layered pattern extended to every remaining table, with full CRUD, foreign-key validation, and composite-key resources.
+- **Task 1** : PostgreSQL database in Docker, seeded automatically from `seed.sql`.
+- **Task 2** : Customer API with a 4-layer architecture (`app/database.py`, `app/schemas/`, `app/crud/`, `app/routers/`) and centralized logging.
+- **Task 3** : A Factor VIII concurrency dashboard: 8 individual count endpoints plus an aggregated `/overall_counts` that runs them all at once with `asyncio.gather()`.
+- **Part 4** : The same layered pattern extended to every remaining table, with full CRUD, foreign-key validation, and composite-key resources.
 
 See [`reflection.md`](./reflection.md) for the written reflections requested in Task 1 and Task 2.
 
@@ -63,7 +63,7 @@ Application code lives inside `app/` as an importable package; Docker,
 environment, and dependency files stay at the project root since they're
 infrastructure, not source code. `task1/`, `task2/`, `task3/` are
 marker folders, each with a short README pointing back to the code in
-`app/` that was added at that stage — the project itself was built as
+`app/` that was added at that stage , the project itself was built as
 one cumulative app rather than a separate copy per task.
 
 ## Prerequisites
@@ -170,9 +170,9 @@ resources (`orderdetails`, `payments`) take both key parts in the path.
 
 ### Error handling
 
-- **404** — record not found on a GET/PUT/DELETE by ID.
-- **422** — a foreign key on create/update points at a row that doesn't exist (e.g. a `productLine` that isn't in `productlines`), or a Pydantic validation rule fails (e.g. `MSRP < buyPrice`, `quantityOrdered <= 0`).
-- **409** — delete blocked because another table still references the row (e.g. deleting an `office` that still has `employees`).
+- **404** : record not found on a GET/PUT/DELETE by ID.
+- **422** : a foreign key on create/update points at a row that doesn't exist (e.g. a `productLine` that isn't in `productlines`), or a Pydantic validation rule fails (e.g. `MSRP < buyPrice`, `quantityOrdered <= 0`).
+- **409** : delete blocked because another table still references the row (e.g. deleting an `office` that still has `employees`).
 - List-by-relationship endpoints (`/orders/customer/{id}`, `/payments/customer/{id}`, `/orderdetails/order/{id}`) never 404 on an empty result — they return `[]`, since "no orders yet" isn't an error.
 
 ## Logging
@@ -190,10 +190,4 @@ everywhere:
 
 `app.log` is gitignored — it's runtime output, not source.
 
-## Before submitting
 
-The assignment asks you to test at least one GET, POST, PUT, and DELETE
-per resource. The fastest way is through Swagger UI at `/docs` — expand a
-resource, hit "Try it out," and run each method. I can't click through
-the UI myself, but if you hit an error you don't understand, paste me the
-response body and I'll help you debug it.
